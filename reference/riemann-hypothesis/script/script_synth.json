@@ -1,0 +1,714 @@
+{
+  "title": "Half the Digits: The Riemann Hypothesis",
+  "target_minutes": 10,
+  "scenes": [
+    {
+      "id": "S01_Hook",
+      "title": "Where is the next prime?",
+      "purpose": "The viewer checks by hand that primes come with no visible rule, then sees the prime staircase blur into a smooth curve from far away; the Riemann Hypothesis is about exactly how precise that curve is; Riemann called his 1859 guess very probable; honest status: a million-dollar prize, more than twelve trillion zeros checked, no proof.",
+      "paragraphs": [
+        {
+          "sentences": [
+            "Here are {#grid} the numbers from one to a hundred, with {#primes} the primes lit up.",
+            "Primes can't be split {#split} into smaller factors, like seven or thirteen."
+          ],
+          "visual": "Empty BG. At {#grid}: a 10 by 10 grid of the numbers 1 to 100 (N, size 26, DIM, rows of ten, 1 at top left, cell size 0.62 manim) fades in row by row, centered, filling y from -3.0 to 3.0. At {#primes}: the 25 primes (2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97) get PALETTE blue rounded tiles behind them and their digits turn INK, lighting in reading order about 0.06 s apart. At {#split}: to the right of the grid, a small DIM caption '6 = 2 × 3' appears (the 6 cell flashes INK), and under it '7' with a DIM tag 'no split'; the 7 and 13 tiles pulse once. Pause: the lit grid holds; the captions fade.",
+          "pause_after": 0.8
+        },
+        {
+          "sentences": [
+            "They're the atoms of arithmetic: {#atoms} every whole number above one is built from them.",
+            "But is there a pattern? {#next} After ninety-seven, where is the next prime?"
+          ],
+          "visual": "At {#atoms}: three cells, 12, 45 and 91, flash INK and small DIM factor labels pop above them: '2 × 2 × 3', '3 × 3 × 5', '7 × 13'; the prime tiles used (2, 3, 5, 7, 13) pulse once; the labels fade. On 'But is there a pattern?': a thin FAINT line snakes from lit tile to lit tile in reading order, visibly irregular, then fades. At {#next}: the 97 tile pulses ACCENT and a large ACCENT '?' appears just below the grid's bottom right corner. Pause (1.2 s, a question to the viewer): the '?' pulses once.",
+          "pause_after": 1.2
+        },
+        {
+          "sentences": [
+            "No formula tells you; you check.",
+            "{#even} Ninety-eight and a hundred are even, {#nines} ninety-nine is nine times eleven, and {#found} a hundred and one is prime."
+          ],
+          "visual": "On 'No formula tells you': the whole grid shifts up by one row (so nothing leaves the frame) and a new partial row '101 102 … 110' fades in underneath in DIM; the '?' shrinks into the 101 cell. At {#even}: the 98 and 100 cells get small DIM tags '2 × 49' and '2 × 50' and fade to FAINT. At {#nines}: 99 gets the tag '9 × 11' and fades to FAINT. At {#found}: 101 gets a blue tile with INK digits and one ACCENT pulse; the '?' is gone. Pause: hold.",
+          "pause_after": 0.8
+        },
+        {
+          "sentences": [
+            "Up close, {#noise} the primes look like noise.",
+            "But count them, {#count} one step up per prime, and {#back} step back.",
+            "The staircase {#blur} blurs, and {#curve} a smooth curve follows it with astonishing precision."
+          ],
+          "visual": "At {#noise}: all 26 lit tiles flicker once in random order, like static. At {#count}: the grid dissolves; the blue tiles fly down and to the left and become the 25 steps of the prime staircase up to 100 (topic.staircase; NEUTRAL axes, horizontal 0 to 100 over x = -6 to 6, vertical 0 to 26 over y = -3 to 3, DIM tick labels in N). At {#back}: the content group scales down about the lower left origin (camera still) while more steps join and the horizontal range grows smoothly from 100 to 100,000 over about 2 s, landing by {#blur}; axis labels update (N, DIM). At {#blur}: at 100,000 (9,592 steps) the jagged edge now reads as a smooth, gently bending blue line; a small magnifier circle near x = 50,000 briefly shows the tiny steps inside, then closes. At {#curve}: a PALETTE teal curve (topic.li_curve) draws from the origin along the blue line and lies almost exactly on it. Pause (1.0 s): the two lines hold together.",
+          "pause_after": 1.0
+        },
+        {
+          "sentences": [
+            "Exactly how precise? {#precise} That is the Riemann Hypothesis.",
+            "In {#riemann} eighteen fifty-nine, Bernhard Riemann made a guess {#probable} he called very probable."
+          ],
+          "visual": "On 'Exactly how precise?': a magnifier circle opens on the right end of the graph at x = 100,000, showing the teal curve about 38 above the blue staircase (li(100,000) = 9,629.8 against 9,592), with a thin ACCENT bracket between them and the DIM label 'how big is this gap?' (T, 24). At {#precise}: the title 'The Riemann Hypothesis' (T, 44, INK) writes in at the top center. At {#riemann}: the title fades; the graph with its magnifier slides to the left half and dims to 40%; on the right a card: 'Bernhard Riemann' (T, 32, INK) over '1859 · about 8 pages · Berlin Academy' (T, 24, DIM), beside a paper icon (a NEUTRAL rounded rectangle with eight faint DIM text lines). At {#probable}: under the card, 'sehr wahrscheinlich' (T, 28, ACCENT, italic) appears with the DIM translation 'very probable' below. Pause: hold.",
+          "pause_after": 0.8
+        },
+        {
+          "sentences": [
+            "Today it's worth {#prize} a million dollars.",
+            "Computers have confirmed it for {#checked} more than twelve trillion special points, called zeros.",
+            "{#never} Nobody has proved it."
+          ],
+          "visual": "At {#prize}: the graph and card fade; top center: 'Clay Millennium Prize · $1,000,000' (T, 32, ACCENT). At {#checked}: under it an N counter rolls quickly from 0 to '12,000,000,000,000+' (Palatino, 36, INK) with a small GOOD check beside it and a DIM label under it: 'zeros checked · we'll meet them soon' (T, 24). At {#never}: a DIM label 'proof' appears below with an empty NEUTRAL outlined box beside it; the box stays empty. Pause (scene end): everything fades out together.",
+          "pause_after": 0.9
+        }
+      ]
+    },
+    {
+      "id": "S02_Gauss",
+      "title": "A teenager counts primes",
+      "purpose": "Gauss (about 1792, aged 15 or 16) counted primes in blocks of a thousand and saw them thin out: the typical gap near x is the natural logarithm of x (about 7 near a thousand, 14 near a million, plus 2.3 per extra digit); adding up the chance of one in ln x gives his smooth curve; the 1896 prime number theorem proved it right only as a ratio, while the gap keeps growing.",
+      "paragraphs": [
+        {
+          "sentences": [
+            "That smooth curve goes back to {#gauss} a teenager, Carl Friedrich Gauss, around seventeen ninety-two.",
+            "In idle quarter hours, {#blocks} he counted primes in blocks of a thousand."
+          ],
+          "visual": "Empty BG. At {#gauss}: a caption card at the top left: 'Carl Friedrich Gauss' (T, 30, INK) over 'about 1792 · age 15 or 16' (T, 24, DIM). At {#blocks}: seven tall bars grow across the middle of the frame, one per block of a thousand numbers, for the blocks starting at 1, 1,000, 10,000, 100,000, 1,000,000, 10,000,000 and 100,000,000 (labels under them in N 24: '1', '1k', '10k', '100k', '1M', '10M', '100M'). Bar heights are the true prime counts in each block: 168, 135, 106, 81, 75, 61, 54 (topic.block_counts), PALETTE blue fill, each count in small N INK on top. Pause: hold.",
+          "pause_after": 0.8
+        },
+        {
+          "sentences": [
+            "He saw them {#thin} thin out: near a thousand, primes are {#seven} about seven apart on average; near a million, {#fourteen} about fourteen."
+          ],
+          "visual": "At {#thin}: a smooth DIM dashed trend line settles over the bar tops, sloping gently down; then the bars shrink into a small strip at the top. At {#seven}: a close-up number line (NEUTRAL, 120 consecutive numbers from 1,000 to 1,119 across x = -6 to 6 at y = 0.8) with a blue tick at each of its 19 primes (1009, 1013, 1019, 1021, 1031, 1033, 1039, 1049, 1051, 1061, 1063, 1069, 1087, 1091, 1093, 1097, 1103, 1109, 1117); at its right a readout 'average gap near 1,000: 6.9' (N, 28, INK), with a DIM note 'measured from 500 to 1,500'. At {#fourteen}: a second number line at the same scale directly below (y = -0.8), 120 numbers from 1,000,000 to 1,000,119, with blue ticks at its 7 primes (1,000,003, 1,000,033, 1,000,037, 1,000,039, 1,000,081, 1,000,099, 1,000,117), visibly sparser; readout 'average gap near 1,000,000: 13.8' (DIM note 'measured from 950,000 to 1,050,000'). Pause: hold.",
+          "pause_after": 0.8
+        },
+        {
+          "sentences": [
+            "That typical gap is {#log} the natural logarithm, which grows by about two point three {#digit} with every extra digit."
+          ],
+          "visual": "At {#log}: beside the two readouts, ACCENT labels 'ln 1,000 = 6.9' and 'ln 1,000,000 = 13.8' (N, 28) slide in, with a DIM caption 'natural logarithm, ln' above them. At {#digit}: the number lines fade; a small ladder builds on the right: '1,000: 6.9', '10,000: 9.2', '100,000: 11.5', '1,000,000: 13.8' (N, 28, INK), with ACCENT '+2.3' tags sliding in between consecutive rungs. Pause: hold, then the ladder clears.",
+          "pause_after": 0.8
+        },
+        {
+          "sentences": [
+            "{#chance} Near any number, the chance of a prime is about one in its logarithm.",
+            "Add those chances up, {#add} and {#curve} out comes Gauss's smooth curve."
+          ],
+          "visual": "At {#chance}: a row of 14 small number tiles in the middle; one of them lights blue; the label 'chance ≈ 1 / ln x' (N, 30, INK) appears above the row. At {#add}: the row fades; left two thirds: axes from 0 to 1,000,000 horizontally and 0 to 80,000 vertically (N, DIM labels); a small upper panel shows the density curve 1/ln t (DIM) from t = 2 to 1,000,000, and its area shades teal from left to right behind a vertical ACCENT sweep line. At {#curve}: in step with the sweep, the main graph draws the PALETTE teal curve topic.li_curve (at this scale li and Li are identical), ending at 78,627.5 at x = 1,000,000; the blue prime staircase (topic.staircase) fades in underneath and the two nearly coincide; a teal label 'Gauss's curve' (T, 26) appears at the curve's end. Pause: the upper panel fades.",
+          "pause_after": 0.8
+        },
+        {
+          "sentences": [
+            "In {#proof} eighteen ninety-six, Jacques Hadamard and Charles de la Vallée Poussin proved Gauss right.",
+            "But read the fine print: {#ratio} the ratio of the two goes to one, {#gap} while the gap itself keeps growing."
+          ],
+          "visual": "At {#proof}: caption at the top right: '1896 · Hadamard · de la Vallée Poussin' (T, 26, INK) with 'prime number theorem' (T, 24, DIM) below. At {#ratio}: the graph shrinks to the left; a table builds at the right with the headers 'up to', 'staircase ÷ curve', 'curve − staircase' (T, 24, DIM) and rows filling in turn: '1,000 | 0.946 | 9.6', '1,000,000 | 0.998 | 129.5', '100,000,000 | 0.99987 | 754.4' (N, 28, INK); a small GOOD check appears by the ratio column as it closes in on 1. At {#gap}: the right column pulses ACCENT, its numbers visibly growing. Pause (1.0 s): hold on the growing gap; then everything fades out.",
+          "pause_after": 1.0
+        }
+      ]
+    },
+    {
+      "id": "S03_CoinFlips",
+      "title": "How big is the gap? Half the digits",
+      "purpose": "A coin-flip walk drifts about the square root of the number of flips, which is half the digits; x is how far we count; up to a million Gauss's curve is off by about 130; Koch (1901) showed the Riemann Hypothesis says exactly that the staircase stays within about the square root of x, times a log; the error dial is born, its proven window running from one half to one, with Riemann's guess at one half.",
+      "paragraphs": [
+        {
+          "sentences": [
+            "So the real question: {#far} how far off can Gauss's curve be?"
+          ],
+          "visual": "Empty BG. At {#far}: a small echo of S02's graph at the top center: the teal curve and blue staircase, with a vertical ACCENT bracket between them near the right end labelled 'gap?' (T, 26), and a large ACCENT '?' beside it. Pause (1.1 s, a question to the viewer): the '?' pulses once, then the echo shrinks to a corner thumbnail at the top left.",
+          "pause_after": 1.1
+        },
+        {
+          "sentences": [
+            "For scale, {#coin} let's flip a coin. Heads, {#up} step up; tails, {#down} step down.",
+            "After a million flips, {#walks} you typically end up {#thousand} about a thousand steps from the start."
+          ],
+          "visual": "At {#coin}: a coin (ACCENT disc with 'H' in T font) flips at the middle left; NEUTRAL axes appear to its right: horizontal 'flips', vertical 'heads minus tails' (T, 24, DIM), spanning x = -5.5 to 5.5, y = -2.2 to 2.8, with a small ACCENT walker dot at the origin. At {#up}: the coin lands heads and the walker moves one step up. At {#down}: the coin lands tails ('T') and the walker steps down; the coin fades. At {#walks}: seven random walks (topic.random_walks(seed=7, n=1,000,000), one per PALETTE colour, thin strokes) draw together from the origin to 1,000,000 flips; the vertical axis relabels to ±3,000. At {#thousand}: a DIM dashed envelope ±√n draws over them, reaching ±1,000 at the right end; most walks end inside or near it; an N label '≈ 1,000' appears at the right end of the upper envelope. Pause: hold.",
+          "pause_after": 0.8
+        },
+        {
+          "sentences": [
+            "A million, a thousand: {#root} that's the square root, {#half} with half as many zeros.",
+            "Pure chance misses {#digits} by about half the digits."
+          ],
+          "visual": "At {#root}: at the top right, '1,000,000' (N, 36, INK) and under it '√1,000,000 = 1,000' (N, 36, ACCENT). At {#half}: the six zeros of the million and the three zeros of the thousand each get a small ACCENT underline, three against six. At {#digits}: the label 'half the digits' (T, 30, ACCENT) appears under the pair. Pause: the walks fade.",
+          "pause_after": 0.8
+        },
+        {
+          "sentences": [
+            "Call how far you've counted {#x_mark} x.",
+            "Up to a million, {#miss} Gauss's curve is off by about a hundred and thirty.",
+            "In {#koch} nineteen oh one, Helge von Koch showed what the Riemann Hypothesis {#promise} really says.",
+            "The staircase never strays from Gauss's curve by much more than {#sqrt} the square root of x, times a logarithm."
+          ],
+          "visual": "The corner thumbnail returns to full size in the upper two thirds: horizontal axis 0 to 1,000,000, the blue staircase and teal curve (both exact). At {#x_mark}: a vertical ACCENT marker line labelled 'x' (N, 30) slides along the horizontal axis and stops at 1,000,000. At {#miss}: a magnifier at x = 1,000,000 shows the gap between curve and staircase with an N label '129.5', next to a much taller DIM bar labelled '√x = 1,000'. At {#koch}: caption at the top right: 'Helge von Koch · 1901' (T, 26, INK). At {#promise}: under it a DIM line 'Riemann Hypothesis = the gap stays within about √x · log x' (N, 24). At {#sqrt}: a teal-tinted band of half-width √x·ln x/(8π) (Schoenfeld's explicit form, valid under RH from x = 2,657; 549.7 at a million) appears around the teal curve, drawn inside the magnifier as well, and the staircase sits visibly inside it. Pause: hold, then the graph shrinks away.",
+          "pause_after": 0.8
+        },
+        {
+          "sentences": [
+            "Let's put this on {#dial} a dial. {#zero} Zero would mean the error never grows; {#all} one, an error with as many digits as x.",
+            "{#coin_mark} One half, half the digits, is coin-flip size."
+          ],
+          "visual": "At {#dial}: the ERROR DIAL fades in at its fixed home for the rest of the video: bottom center, on a BG backing panel, a NEUTRAL horizontal ruler from x = -2.5 to x = 2.5 at y = -3.2, with ticks and N labels '0', '½', '1' (Palatino, 28) under x = -2.5, 0 and 2.5, and a DIM caption 'error dial' (T, 24) at its left end. Its reading is the power of x in the size of the error. Layout rule: whenever the dial is on screen the camera never moves (zooms are done by scaling content groups) and all other content stays above y = -2.6. At {#zero}: above tick 0 a small DIM label 'never grows'. At {#all}: above tick 1 a small DIM label 'all the digits'. At {#coin_mark}: a small ACCENT coin icon drops onto the ½ tick with a DIM label 'coin flips' above it. Pause: hold.",
+          "pause_after": 0.8
+        },
+        {
+          "sentences": [
+            "So far, we can only prove {#window} the primes sit somewhere in this window.",
+            "Riemann's guess: {#pin} right at one half, as unruly as coin flips, and no more."
+          ],
+          "visual": "At {#window}: a translucent ACCENT window (opacity 0.25, ACCENT rim) grows over the ruler from ½ to 1, with a small DIM label 'proven range' above it. At {#pin}: a small ACCENT pin labelled 'Riemann?' (T, 22) drops onto ½ beside the coin; the window itself stays wide (it narrows only in the hypothetical beat of S11, and even then only as a dashed 'if'). Pause (1.1 s, the thesis of the video): the pin glows once; then all content above the dial fades; the dial fades last.",
+          "pause_after": 1.1
+        }
+      ]
+    },
+    {
+      "id": "S04_Zeta",
+      "title": "Euler's bridge",
+      "purpose": "The sum 1 + 1/2^s + 1/3^s + ... gives pi squared over six at s = 2 and grows forever at s = 1; Euler's 1737 product, shown as a sieve that strips out the multiples of each prime until only 1 is left, turns the sum over all whole numbers into a product over the primes alone: zeta knows the primes.",
+      "paragraphs": [
+        {
+          "sentences": [
+            "To see why, we need Riemann's tool.",
+            "{#pick} Pick a number s, and add {#terms} one, plus one over two to the s, plus one over three to the s, forever."
+          ],
+          "visual": "Empty BG (no error dial in S04 and S05: this is a toolbox detour; the dial returns in S06). On the first sentence: a small DIM caption 'Riemann's tool' fades in at the top center and out again. At {#pick}: an input box at the top left 's = ' (N, 36, INK) with an empty slot. At {#terms}: across the middle, the row '1 + 1/2ˢ + 1/3ˢ + 1/4ˢ + 1/5ˢ + 1/6ˢ + …' (N, 34, INK; Unicode superscript ˢ, no LaTeX) writes in term by term, timed to the words. Pause: hold.",
+          "pause_after": 0.7
+        },
+        {
+          "sentences": [
+            "With s equal to two, {#two} the sum settles on pi squared over six.",
+            "With s equal to one, {#one} it grows forever, just very slowly."
+          ],
+          "visual": "At {#two}: the slot shows '2'; the row becomes '1 + 1/4 + 1/9 + 1/16 + …'; below it a horizontal bar grows in segments (one per term, PALETTE colours cycling) toward a fixed ACCENT tick labelled 'π²/6 = 1.6449…', with a running N readout 1.5498 (10 terms), 1.6350 (100), 1.6439 (1,000); small caption 'Euler · 1735' (T, 24, DIM). At {#one}: the slot shows '1'; the row becomes '1 + 1/2 + 1/3 + 1/4 + …'; a second bar grows slowly past the frame's right edge, with a readout 2.93 (10 terms), 5.19 (100), 7.49 (1,000), 14.39 (1,000,000) and a DIM '… forever'. Pause: hold, then the bars clear and the row returns to the general 's' form.",
+          "pause_after": 0.8
+        },
+        {
+          "sentences": [
+            "In {#euler} seventeen thirty-seven, Euler found a bridge to the primes.",
+            "Multiply the sum by one minus one over two to the s, and {#evens} every even term drops out.",
+            "Then three, {#threes} and its multiples drop out too."
+          ],
+          "visual": "The general row becomes tiles '1', '1/2ˢ', '1/3ˢ', … up to '1/30ˢ', in three rows of ten, centered (N, 28). At {#euler}: caption 'Euler · 1737' (T, 24, DIM) at the top left. At {#evens}: to the left of the tiles a factor '(1 − 1/2ˢ)' (N, 28, PALETTE blue) appears; every tile with an even denominator (2, 4, 6, …, 30) flashes blue and fades to FAINT. At {#threes}: a second factor '(1 − 1/3ˢ)' (PALETTE yellow) joins; the surviving multiples of 3 (3, 9, 15, 21, 27) flash yellow and fade. Exact: multiplying by (1 − 1/pˢ) removes exactly the remaining terms whose n is a multiple of p. Pause: survivors 1, 5, 7, 11, 13, 17, 19, 23, 25, 29 wait.",
+          "pause_after": 0.8
+        },
+        {
+          "sentences": [
+            "It's {#sieve} a sieve for primes inside the sum: in the end, {#lone} only the one survives.",
+            "So the sum over all whole numbers {#product} equals a product over the primes alone."
+          ],
+          "visual": "At {#sieve}: a small DIM caption 'like the sieve of Eratosthenes' appears; factors for 5 (pink), 7 (green), then 11, 13, 17, 19, 23, 29 (purple, orange, teal, then cycling) join quickly, each removing its tiles (5 removes 5 and 25; each larger prime removes only itself). At {#lone}: only the tile '1' remains, glowing ACCENT; the display reads '(1 − 1/2ˢ)(1 − 1/3ˢ)(1 − 1/5ˢ)… × sum = 1'. At {#product}: the display rearranges into '1 + 1/2ˢ + 1/3ˢ + … = 1/(1 − 1/2ˢ) × 1/(1 − 1/3ˢ) × 1/(1 − 1/5ˢ) × …' (N, 30), the left side labelled 'all whole numbers' (T, 24, DIM) and the right side 'only primes' (T, 24, DIM). Pause: hold.",
+          "pause_after": 0.9
+        },
+        {
+          "sentences": [
+            "Riemann named this function {#zeta} zeta. {#knows} Zeta knows the primes."
+          ],
+          "visual": "At {#zeta}: the left side collapses into 'ζ(s)' (N, 48, INK) with the DIM word 'zeta' under it. At {#knows}: a gentle NEUTRAL arc bridge draws from a small cluster '1 2 3 4 5 6 …' (DIM, left) to a cluster '2 3 5 7 11 …' (blue, right), passing under ζ(s). Pause (scene end, 0.9 s): hold, then everything fades out.",
+          "pause_after": 0.9
+        }
+      ]
+    },
+    {
+      "id": "S05_Plane",
+      "title": "Zeta on a plane",
+      "purpose": "Riemann fed zeta points on a plane; the sum becomes a spiral of arrows that settles only to the right of one; because complex smoothness is so rigid, there is exactly one smooth way to extend zeta to the whole plane, and it blows up only at s = 1, just as the sum did.",
+      "paragraphs": [
+        {
+          "sentences": [
+            "Riemann's leap was to feed zeta {#plane} points on a plane, not just numbers on a line: {#right} how far right, and {#up} how far up."
+          ],
+          "visual": "Empty BG. At {#plane}: a horizontal number line (NEUTRAL) draws at y = 0 with ticks −2 to 4 (1 unit = 1.4 manim, origin at x = -1.5), then a FAINT square grid spreads up and down from it to fill the frame; a vertical axis appears; small caption 'Riemann · 1859' (T, 24, DIM) at the top left. At {#right}: an input dot (ACCENT with a thin BG rim) sits at 2 on the horizontal axis, with a horizontal DIM arrow from the vertical axis to it labelled '2 across'. At {#up}: the dot moves up to 2 + 3i; a vertical DIM arrow labelled '3 up'; a small N label '2 + 3i' by the dot and a DIM note 'i marks the up-part' under it. Pause: hold.",
+          "pause_after": 0.8
+        },
+        {
+          "sentences": [
+            "Moving up makes {#spin} each term spin, so the sum becomes {#spiral} a spiral of arrows.",
+            "Far enough right, {#settle} the spiral settles on one point: that's zeta's value.",
+            "Left of one, {#wander} it never settles, and the sum stops working."
+          ],
+          "visual": "The grid dims; the right half of the frame becomes an output panel with its own small DIM axes. At {#spin}: the first few terms 1/nˢ for s = 2 + 3i appear as arrows in the output panel: each has length 1/n² and is turned by −3·ln n radians (exact), so successive arrows visibly turn. At {#spiral}: the arrows join tip to tail (partial sums, topic.spiral_partial_sums(s, N = 200)) and curl into a tightening spiral. At {#settle}: the spiral converges to a point marked by an ACCENT dot, labelled 'ζ(2 + 3i) ≈ 0.80 − 0.11i' (N, 24; computed with mpmath); in the input panel the half-plane right of the line 'real part 1' tints faintly teal. At {#wander}: the input dot slides left to 0.6 + 3i; the spiral redraws with 2,000 terms and keeps looping outward without settling (exact partial sums); the region left of 1 in the input panel gets DIM hatching labelled 'sum fails here'. Pause: hold.",
+          "pause_after": 0.8
+        },
+        {
+          "sentences": [
+            "But on a plane, being smooth is {#strict} a far stricter demand than on a line.",
+            "Know such a function {#patch} on any small patch, and {#locked} it is locked in everywhere else."
+          ],
+          "visual": "The output panel fades; the input plane returns to full width. At {#strict}: a small side demo at the top left: a short curve on a line with three different dashed smooth continuations fanning out, and the DIM caption 'on a line: many ways'. At {#patch}: on the plane, a small square patch (about 1 by 1 unit, around 3 + 1i) fills with domain colouring of ζ (hue = angle of the output, steady brightness; topic.domain_color, computed with mpmath). At {#locked}: the colouring spreads outward from the patch like ink until it covers the whole region right of 1; the side demo's caption is replaced by 'on a plane: only one way' (T, 24, DIM), and the side demo fades. Pause: hold.",
+          "pause_after": 0.8
+        },
+        {
+          "sentences": [
+            "So there's {#one_way} exactly one smooth way to extend zeta to {#whole} the whole plane, and Riemann found it.",
+            "It blows up only {#pole} at one, just as the sum did."
+          ],
+          "visual": "At {#one_way}: the hatching left of 1 lifts away. At {#whole}: the domain colouring flows across the line at 1 and fills the whole visible plane (the plane content group rescales smoothly to horizontal −10 to 3, vertical −30 to 30; no camera move). At {#pole}: the one point s = 1 gets a small INK ring labelled 'blows up at 1' (T, 24, DIM), and a faint DIM echo '1 + 1/2 + 1/3 + … grows forever' appears beside it for a moment. Pause (scene end): hold, then fade out.",
+          "pause_after": 0.8
+        }
+      ]
+    },
+    {
+      "id": "S06_Zeros",
+      "title": "The zeros and the fold",
+      "purpose": "Zeta's easy zeros sit at -2, -4, -6, ...; all others hide in the strip between 0 and 1, where only the extended zeta reaches; walking up the middle line, zeta hits zero at height 14.13, then 21, 25, 30...; zeros come in mirror pairs across the middle; RH says every zero in the strip sits on the fold at one half; the strip's floor reads 0, one half, 1, exactly like the error dial, and that is no coincidence.",
+      "paragraphs": [
+        {
+          "sentences": [
+            "Now, where does the extended zeta equal zero?",
+            "Some are easy: {#trivial} minus two, minus four, minus six, and on forever."
+          ],
+          "visual": "Empty BG. The plane from S05 fades in without colouring: FAINT grid, NEUTRAL axes, horizontal range −11 to 3 across the frame, vertical 0 to 55 (upper half only, DIM N ticks every 10), all content above y = -2.6. On the question: a small DIM caption 'where ζ(s) = 0' (N, 26) at the top left. At {#trivial}: INK dots with BG rims pop in at −2, −4, −6, −8, −10 on the horizontal axis, one per spoken number, with N labels below, and a DIM caption 'easy zeros'. Pause: hold.",
+          "pause_after": 0.7
+        },
+        {
+          "sentences": [
+            "Every other zero hides {#strip} in a narrow strip between zero and one.",
+            "{#only} The sum can't reach in here, only the extended zeta."
+          ],
+          "visual": "At {#strip}: the vertical strip between real parts 0 and 1 fills with a soft teal tint (opacity 0.18), NEUTRAL edges. The error dial fades in at its home with its S03 state (ruler, coin and pin 'Riemann?' at ½, ACCENT window ½ to 1). Then the plane content group transforms (not the camera) into the DIAL-ALIGNED STRIP layout used again in S10: real part 0 sits exactly above the dial's '0' tick (x = -2.5) and real part 1 above its '1' tick (x = 2.5); height 0 to 50 runs from y = -2.5 to y = 3.4 (1 unit up = 0.118 manim), a tiny DIM tag 'stretched sideways'; the easy zeros slide off to the left. At {#only}: the band just right of the strip (x from 2.5 to 3.2) tints teal with a DIM tag 'sum works', and inside the strip a DIM tag 'only extended ζ'. Pause: the tags fade.",
+          "pause_after": 0.8
+        },
+        {
+          "sentences": [
+            "Walk {#walk} up the middle of the strip, and {#watch} watch where zeta sends you.",
+            "At height fourteen point one three, {#first} it lands exactly on zero."
+          ],
+          "visual": "At {#walk}: an ACCENT input dot appears at ½ on the strip's floor and starts climbing straight up the middle (real part ½), leaving a thin ACCENT trail. At {#watch}: an output panel opens at the right (x = 3.5 to 6.8, y = -1.4 to 2.2) with DIM axes and a clear origin cross; as the input climbs, the output point ζ(½ + it) traces its path there in INK (topic.zeta_line_path, t from 0 to 50, computed with mpmath, scaled to fit; it starts at ζ(½) = −1.46). At {#first}: at t = 14.1347 the output path passes exactly through the origin; the origin flashes ACCENT, and at the input position a zero dot (INK, BG rim) appears with the label '½ + 14.13 i' (N, 28, INK). Pause: hold.",
+          "pause_after": 0.8
+        },
+        {
+          "sentences": [
+            "{#more} Again at twenty-one, twenty-five, thirty, and on.",
+            "And zeros come in mirror pairs: {#fold} fold the strip down the middle, and they pair up or sit on the fold."
+          ],
+          "visual": "At {#more}: the climb continues; each time the output path passes through the origin (heights 21.022, 25.011, 30.425, as spoken), the origin flashes and a zero dot lands on the middle line with a small N height label; then quickly 32.935, 37.586, 40.919, 43.327, 48.005, 49.774 (exact, mpmath.zetazero); ten dots in all. The output panel fades. At {#fold}: two hollow BAD dashed rings, tagged 'imaginary' (T, 22, DIM), appear at 0.8 + 35i and 0.2 + 35i (illustration only; no such zero is known); the strip's left half folds over onto its right half about the middle line (a 1 s flip about the vertical axis at real part ½): the two rings land on each other, and the ten real zeros stay put on the fold; then the fold opens back. Pause: hold.",
+          "pause_after": 0.8
+        },
+        {
+          "sentences": [
+            "The Riemann Hypothesis says {#claim} every zero in the strip sits exactly on the fold, at one half."
+          ],
+          "visual": "At {#claim}: the two BAD rings fade out; an ACCENT vertical line draws through all ten zeros at real part ½ from bottom to top and extends past the frame's top edge (implying forever), labelled 'real part ½' (T, 24, ACCENT) near the top; the ten zeros pulse in order upward. Caption at the top left: 'Riemann Hypothesis: every zero in the strip has real part ½' (T, 26, INK). Pause (1.1 s, the statement): hold on the lit line.",
+          "pause_after": 1.1
+        },
+        {
+          "sentences": [
+            "Now look at the strip's floor: {#floor} zero, one half, one.",
+            "That's our error dial. {#coincidence} Is that a coincidence?"
+          ],
+          "visual": "At {#floor}: the strip's floor labels '0', '½', '1' (N, 28) light up ACCENT one at a time, and directly below them the dial's own '0', '½', '1' light up in sync; three thin dashed DIM verticals connect each strip label to its dial tick. On 'That's our error dial': the dial's ruler glows once. At {#coincidence}: a large ACCENT '?' appears to the right of the strip. Pause (1.2 s, a question to the viewer): the '?' pulses once.",
+          "pause_after": 1.2
+        },
+        {
+          "sentences": [
+            "It isn't, and {#goal} the reason is Riemann's real goal."
+          ],
+          "visual": "On 'It isn't': the '?' dissolves and the three dashed verticals glow once. At {#goal}: the strip with its zeros shrinks and slides into its INSET home for S07 (right side, real part 0 to 1 over x = 4.2 to 6.4, height 0 to 50 over y = -2.4 to 3.2), and a faint preview of the prime staircase up to 100 draws on the left. Pause (scene end): everything fades out to the empty background, the dial last.",
+          "pause_after": 0.8
+        }
+      ]
+    },
+    {
+      "id": "S07_Waves",
+      "title": "One wave per zero",
+      "purpose": "Riemann's exact recipe rebuilds the prime staircase from a sharpened version of Gauss's curve (which comes from the pole at 1) plus one wave per zero; single waves first, then 10 and 100 zeros snap onto the staircase; a zero's height sets how fast its wave wiggles and its position across the strip is the power of x at which the wave grows; on the line that power is one half: the square root, half the digits, the same one half as the coin flips.",
+      "paragraphs": [
+        {
+          "sentences": [
+            "Riemann set the proof of his guess aside.",
+            "He was after something bigger: {#recipe} an exact recipe for the prime staircase."
+          ],
+          "visual": "Empty BG, then the error dial fades in at its home (S03 state). The strip fades in as the INSET on the right (real part 0 to 1 over x = 4.2 to 6.4, height 0 to 50 over y = -2.4 to 3.2, ACCENT line at ½ with the first ten zeros, tiny labels '0 ½ 1' under it). On the first sentence: a small 'sehr wahrscheinlich' card (T, 24, DIM) appears at the top left and slides off to the left edge. At {#recipe}: left two thirds: axes for x from 0 to 100 (x = -6.6 to 3.4) and y from 0 to 26 (y = -2.4 to 3.2); the blue prime staircase up to 100 draws (topic.staircase), and a DIM caption at the top: 'Riemann 1859: staircase = smooth curve + one wave per zero' (T, 24). Pause: hold.",
+          "pause_after": 0.8
+        },
+        {
+          "sentences": [
+            "It starts with {#smooth} a sharpened version of Gauss's curve, {#pole} which comes from the one point where zeta blows up."
+          ],
+          "visual": "Formula used, Riemann's prime-counting form (research_facts §8.1 B): π(x) = R(x) − Σ R(x^ρ) − 1/ln x + (1/π)·arctan(π/ln x), one real wave per zero (each zero taken with its mirror image below the axis), computed in topic.R_curve, topic.zero_wave(k, xs) and topic.rebuild(n, xs). At {#smooth}: the PALETTE teal curve R(x) draws over the staircase (R(100) = 25.66), labelled 'sharpened curve' (T, 24, teal). At {#pole}: in the inset, a small INK ring at s = 1 (on the strip's right edge at height 0) glows, and a thin teal thread links it to the curve. Pause: hold.",
+          "pause_after": 0.8
+        },
+        {
+          "sentences": [
+            "Then, for every zero, {#wave} add one wave.",
+            "{#first} Here's the wave from the first zero, {#second} here's the second, {#third} and the third."
+          ],
+          "visual": "At {#wave}: the main graph shrinks upward to occupy y = -0.4 to 3.2; below it, three empty thin lanes appear at y = -0.8, -1.5 and -2.2 (each 0.55 tall, same x range 2 to 100) each with its own enlarged vertical scale and a DIM tag 'waves enlarged' (their true size at this scale is about a third of one step). At {#first}: the first zero dot in the inset pulses PALETTE pink and wave 1 (topic.zero_wave(1)) draws in the top lane in pink, a thin pink thread linking it to its zero. At {#second}: zero 2 pulses green and wave 2 draws in the middle lane. At {#third}: zero 3 pulses purple and wave 3 draws in the bottom lane; the three waves visibly wiggle at different rates. Pause: hold.",
+          "pause_after": 0.8
+        },
+        {
+          "sentences": [
+            "With {#ten} ten zeros, the curve leans into the steps; with {#hundred} a hundred, it snaps onto them.",
+            "With all of them, {#exact} it is the staircase, exactly."
+          ],
+          "visual": "At {#ten}: the lanes lift into the main graph, which grows back to full height; zero dots 1 to 10 in the inset flash in turn and the teal curve morphs to topic.rebuild(10): steps visible but mushy; an N counter 'zeros: 10' at the top right of the graph. At {#hundred}: the inset's vertical range compresses to 0 to 240 so that 100 zero dots show on the ACCENT line (exact heights); the counter reads 'zeros: 100'; the curve morphs to topic.rebuild(100) and locks onto the staircase (max error 0.16 on 2 to 100, with small overshoots at each riser). At {#exact}: the counter reads 'zeros: all' with a DIM tag 'in the limit'; staircase and curve glow together. Pause (1.1 s, reveal): hold.",
+          "pause_after": 1.1
+        },
+        {
+          "sentences": [
+            "{#height} A zero's height sets how fast its wave wiggles.",
+            "{#across} Its position across the strip sets how fast the wave grows: roughly like x to the power of that position."
+          ],
+          "visual": "The staircase graph shrinks to a thumbnail at the top left; the main area becomes a new graph with a LOG horizontal axis from x = 10 to x = 1,000,000 (DIM tick labels '10', '100', '1,000', '10,000', '100,000', '1,000,000' and a DIM tag 'log scale'), on which each wave wiggles evenly. At {#height}: wave 1 (pink, height 14.13) and wave 5 (PALETTE green, height 32.94) draw one above the other; wave 5 wiggles more than twice as often; their zero dots in the inset pulse in their colours with the heights '14.13' and '32.94' highlighted. At {#across}: wave 5 fades; wave 1 alone fills the graph and its envelope ±2√x/(|ρ₁|·ln x) draws as a DIM dashed funnel widening to the right (exact, topic.zero_wave); a DIM label 'size ≈ x^position' appears (Unicode, no LaTeX). Pause: hold.",
+          "pause_after": 0.8
+        },
+        {
+          "sentences": [
+            "On the line, that position is {#half} one half, and x to the one half {#root} is the square root of x.",
+            "It's the same one half: {#digits} half the digits, coin-flip size."
+          ],
+          "visual": "At {#half}: in the inset the ACCENT line's '½' label pulses, and the funnel gains the ACCENT label 'x^½' (N, 30). At {#root}: 'x^½' morphs into '√x' (N, 30, ACCENT). At {#digits}: a thin ACCENT dashed line drops from the inset's '½' label to the dial's ½ tick; the coin icon on the dial flips once and the pin 'Riemann?' glows. Pause (1.2 s, the key reveal): hold on the linked ½s; then (scene end) everything fades out, the dial last.",
+          "pause_after": 1.2
+        }
+      ]
+    },
+    {
+      "id": "S08_OneHalf",
+      "title": "Why one half is the best the primes can do",
+      "purpose": "A zero off the line at 0.8 would make a wave growing like x^0.8, about sixty times the on-line size by a million, and the primes would clump; sliding it left just moves its mirror twin to the right, and the louder twin sets the error; so the dial reads the rightmost zero, zeros on the line exist, and one half is the best possible: exactly Riemann's guess; the 1896 proof only cleared the strip's edge (enough for the ratio); all zeros in the middle means the primes stray like coin flips, and no more.",
+      "paragraphs": [
+        {
+          "sentences": [
+            "Now try to cheat. {#rogue} Slide one zero off the line, to zero point eight.",
+            "Its wave grows like {#faster} x to the zero point eight."
+          ],
+          "visual": "Empty BG, then the dial (S03 state), the INSET strip (ACCENT line, first ten zeros) and the S07 log-scale graph (x from 10 to 1,000,000) with the pink first-zero wave and its √x funnel fade in. At {#rogue}: in the inset, a hollow BAD dashed ring tagged 'imaginary' (T, 22, DIM) slides from ½ to 0.8 at height 14.13, and its mirror twin (also a hollow BAD dashed ring) appears at 0.2; on the dial a small BAD marker slides from ½ to 0.8 in sync. At {#faster}: on the log graph, the BAD wave for the hypothetical zero 0.8 + 14.13i (topic.rogue_wave(beta = 0.8, gamma = 14.1347)) draws with its BAD dashed envelope ±2x^0.8/(|ρ|·ln x), a DIM label 'x^0.8'. Pause: hold.",
+          "pause_after": 0.8
+        },
+        {
+          "sentences": [
+            "By a million, {#million} it's about sixty times bigger than a wave from the line, and the primes {#lumpy} clump far more than coin flips allow."
+          ],
+          "visual": "At {#million}: the vertical axis rescales smoothly to fit the BAD wave; the pink √x wave flattens to a near-line beside it; at x = 1,000,000 a thin ACCENT bracket compares the two envelopes with the N label '≈ 63 ×' (the ratio is x^0.3: 4 at 100, 63 at 1,000,000). At {#lumpy}: the staircase thumbnail at the top left is replaced by an illustrative 'lumpy' staircase (DIM tag 'illustration'): the true staircase plus the rogue wave scaled into view, showing clusters of steep climbs and long flat stretches, in BAD tint; one small shake. Pause: hold.",
+          "pause_after": 0.9
+        },
+        {
+          "sentences": [
+            "Slide it left instead, and {#twin} its mirror twin lands on the right.",
+            "{#louder} The louder of the two always sets the error."
+          ],
+          "visual": "At {#twin}: in the inset, the rogue ring slides left from 0.8 to 0.2 while its twin slides from 0.2 to 0.8 at the same time (the pair always stays symmetric about the ½ line); the dial's BAD marker stays at 0.8. At {#louder}: on the log graph, the wave of the ring at 0.2 draws small (x^0.2 envelope, BAD at 40% opacity) beside the big x^0.8 wave, which glows; DIM label 'the louder one wins'. Pause: hold.",
+          "pause_after": 0.8
+        },
+        {
+          "sentences": [
+            "Only on the middle line {#equal} are the twins equally loud.",
+            "So the dial {#reads} reads the rightmost zero.",
+            "Zeros on the line do exist, so {#best} one half is the best possible, and {#guessed} that is exactly what Riemann guessed."
+          ],
+          "visual": "At {#equal}: the two rings slide toward each other; their two envelopes on the log graph close in on the √x funnel from above and below; when both reach ½ they merge into the real first zero on the line, the BAD waves become the pink √x wave, and the dial's BAD marker slides back to ½ and fades. At {#reads}: in the inset a vertical DIM dashed line sweeps in from the strip's right edge and stops at the rightmost zeros, the ACCENT line at ½, with a thin dashed drop to the dial's ½ tick. On 'Zeros on the line do exist': the ten real zeros pulse. At {#best}: the dial's '½' glows ACCENT with a small GOOD check above it and the DIM label 'best possible'. At {#guessed}: the pin 'Riemann?' glows at ½. Pause (1.2 s, the key logic): hold.",
+          "pause_after": 1.2
+        },
+        {
+          "sentences": [
+            "The eighteen ninety-six proof only kept zeros {#edge} off the strip's edge: enough for the ratio.",
+            "Riemann's guess puts them {#middle} all in the middle, and the primes stray like coin flips, {#coins} and no more."
+          ],
+          "visual": "At {#edge}: the log graph fades; the inset grows to the center (still above y = -2.6); its right edge line at real part 1 lights ACCENT from bottom to top with the DIM label '1896: no zeros on the edge'; the dial's window stays ½ to 1 (the edge result only makes the error smaller than x itself, so the window does not narrow). At {#middle}: the edge line returns to NEUTRAL and the ACCENT middle line at ½ glows from bottom to top. At {#coins}: the coin icon on the dial flips once. Pause (scene end): everything fades out, the dial last.",
+          "pause_after": 0.9
+        }
+      ]
+    },
+    {
+      "id": "S09_Evidence",
+      "title": "Very probable was no wild guess",
+      "purpose": "Riemann's paper gives no reason for his confidence; Hilbert put the problem on his 1900 list; Hardy proved in 1914 that infinitely many zeros are on the line (not necessarily all); in 1932 Siegel found that Riemann had computed the first zeros by hand; by 2021 more than twelve trillion zeros were checked, all on the line; the proven share on the line stayed around forty percent for decades, and a 2026 preprint pushes it past two thirds.",
+      "paragraphs": [
+        {
+          "sentences": [
+            "What made Riemann so sure? {#died} His paper doesn't say, and he died at thirty-nine.",
+            "In {#hilbert} nineteen hundred, David Hilbert put the question on his list of problems for the new century."
+          ],
+          "visual": "Empty BG; the error dial fades in at its home (state: window ½ to 1, coin and pin at ½, GOOD check 'best possible'). The strip fades in at the left third (real part 0 to 1 over x = -6.4 to -2.6, height 0 to 50 over y = -2.5 to 3.2; ACCENT line; no zeros yet). A thin NEUTRAL timeline runs across the right two thirds at y = 2.8 from 1850 to 2030 with DIM decade ticks. On the question: the tick at 1859 lights with a tiny paper icon. At {#died}: a small DIM card at 1859: 'Riemann · 1826 to 1866' (T, 22). At {#hilbert}: a card at 1900: 'Hilbert · 1900 · problem 8' (T, 24, INK) with a small scroll icon listing faint lines, the eighth line lit ACCENT. Pause: hold.",
+          "pause_after": 0.8
+        },
+        {
+          "sentences": [
+            "In {#hardy} nineteen fourteen, Godfrey Hardy proved that infinitely many zeros sit on the line, {#notall} though not necessarily all."
+          ],
+          "visual": "At {#hardy}: a card at 1914: 'Hardy · 1914' (T, 24, INK); in the strip, the ACCENT line fills with an upward-flowing shimmer running past the top edge, and a DIM label 'infinitely many on the line' appears beside it. At {#notall}: a DIM note 'all of them? open' appears under that label. Pause: hold.",
+          "pause_after": 0.8
+        },
+        {
+          "sentences": [
+            "In {#siegel} nineteen thirty-two, Carl Ludwig Siegel dug through Riemann's unpublished notes.",
+            "{#hand} Riemann had worked out the first few zeros by hand.",
+            "So very probable {#wild} was no wild guess."
+          ],
+          "visual": "At {#siegel}: a card at 1932: 'Siegel · 1932' (T, 24, INK) with a sketch of a notebook page (NEUTRAL rectangle, faint DIM handwriting squiggles; illustration). At {#hand}: from the notebook, two small ACCENT dots fly into the strip and land on the line at heights 14.13 and 25.01, labelled with Riemann's own values 'Riemann: 14.1386' and 'Riemann: ≈ 25.3' (N, 22, DIM), then fade to INK. At {#wild}: the 'sehr wahrscheinlich · very probable' card (from S01) reappears under the timeline and gets a small GOOD check. Pause (1.1 s): hold.",
+          "pause_after": 1.1
+        },
+        {
+          "sentences": [
+            "By twenty twenty-one, Dave Platt and Tim Trudgian had confirmed {#trillion} more than twelve trillion zeros, every one exactly on the line."
+          ],
+          "visual": "On 'By twenty twenty-one': a card at 2021: 'Platt and Trudgian · 2021' (T, 24, INK). At {#trillion}: an N counter above the strip rolls from 0 to '12,000,000,000,000' and settles on '≈ 12.36 trillion' (Palatino, 30, INK) while the strip's vertical scale compresses and dots pour onto the line as a dense bright column (illustrative density; a DIM tag 'heights up to 3,000,000,000,000'); on 'every one exactly on the line' a GOOD check pops beside the counter and the column pulses once. Pause: hold.",
+          "pause_after": 0.8
+        },
+        {
+          "sentences": [
+            "For decades, the proven share on the line stayed {#forty} around forty percent.",
+            "Then {#thirds} a new proof in twenty twenty-six pushed it past two thirds."
+          ],
+          "visual": "At {#forty}: a card at 1989: 'Conrey · 1989 · > 40%' (T, 24, INK); beside the strip a vertical proportion bar (NEUTRAL outline, 0 to 100%) fills ACCENT to 40% and holds there while a thin DIM bracket spans the timeline from 1989 to 2020 ('about 40% to 42%'). At {#thirds}: a card at 2026: 'Alpöge and Furman · 2026 · preprint' (T, 24, INK); the bar fills on to 67% with a small N label '> 67%'. A thin DIM note under the bar: 'a share, not all'. Pause (scene end): hold, then everything fades out except the dial, which fades last.",
+          "pause_after": 0.9
+        }
+      ]
+    },
+    {
+      "id": "S10_WhyHard",
+      "title": "Why checking isn't proving",
+      "purpose": "Infinitely many zeros can't all be checked; a true precedent (Littlewood 1914) shows data can mislead; even 'almost all on the line' would not rule out one rogue; the dial's window has never narrowed (nobody can prove the reading below 0.99); Guth and Maynard (2024) limited how many zeros can sit far from the line, the first real progress there since 1940.",
+      "paragraphs": [
+        {
+          "sentences": [
+            "So why isn't twelve trillion enough?",
+            "There are {#infinite} infinitely many zeros, and any check {#left_over} leaves infinitely many unchecked."
+          ],
+          "visual": "Empty BG; the dial at its home (S09 state). The strip returns in the DIAL-ALIGNED STRIP layout from S06 (real part 0 to 1 over x = -2.5 to 2.5, height 0 to 50 over y = -2.5 to 3.4) with its ACCENT line and ten zeros. On the question: a small ACCENT '?' at the top right. At {#infinite}: the strip's content scrolls upward endlessly (dots stream down past the viewer, getting denser, as an N height readout at the right runs 50, 500, 5,000, …). At {#left_over}: a GOOD-tinted band marks the checked part at the bottom and shrinks to a sliver as the height readout races past '3,000,000,000,000' and on to '10¹⁰⁰' (Unicode superscripts); above it the line continues in DIM, unchecked. Pause: hold.",
+          "pause_after": 0.8
+        },
+        {
+          "sentences": [
+            "And the primes have fooled us before. {#below} For every number anyone has checked, the staircase stays below Gauss's curve.",
+            "Yet in {#littlewood} nineteen fourteen, John Littlewood proved it must cross above, {#cross} probably first near a number three hundred and seventeen digits long."
+          ],
+          "visual": "The strip fades. A graph of 'Gauss's curve − staircase' (teal-tinted line) against x on a log horizontal axis from 10 to 10⁸ (values from research_facts §2: 5.1 at 100 up to 754.4 at 10⁸) sits above a NEUTRAL zero line. At {#below}: the gap line draws, positive the whole way, and a DIM tag 'every x checked: staircase below' appears. At {#littlewood}: caption 'Littlewood · 1914' (T, 24, INK). At {#cross}: the horizontal axis compresses and a DIM '…' break is inserted; far out, an illustrative dashed dip (DIM tag 'illustration') crosses below the zero line near a label '≈ 10³¹⁶ ?' (N, 26). Pause: hold, then clear.",
+          "pause_after": 0.9
+        },
+        {
+          "sentences": [
+            "Even proving that almost all zeros are on the line {#almost} wouldn't rule out a single rogue.",
+            "On our dial, {#window} the window has never narrowed: nobody can even prove it reads {#below_one} below zero point nine nine."
+          ],
+          "visual": "The strip returns (aligned above the dial). At {#almost}: the proportion bar from S09 reappears beside the strip, filling DIM and dashed to '100%' (tag 'even this'), while high up in the strip a single hollow BAD dashed ring tagged 'one rogue?' (illustration; no such zero is known) blinks off the line; the bar's 100% label stays DIM. At {#window}: the ring and bar fade; the dial's ACCENT window (½ to 1) pulses with a DIM caption above it 'proven: somewhere in here'. At {#below_one}: a thin DIM dashed tick appears at 0.99 on the dial, just left of 1, labelled '0.99' (N, 22), with 'proved?' (T, 22, DIM) and a small BAD cross above it; the window stays unchanged. Pause (1.0 s): hold.",
+          "pause_after": 1.0
+        },
+        {
+          "sentences": [
+            "In {#guth} twenty twenty-four, Larry Guth and James Maynard proved that {#few} there can't be too many zeros far from the line.",
+            "It was the first real progress there {#ingham} since nineteen forty."
+          ],
+          "visual": "At {#guth}: caption 'Guth and Maynard · 2024' (T, 24, INK) at the top right. At {#few}: inside the strip, a DIM translucent region to the right of the line around real part ¾ is labelled 'room for rebels' (illustration: no zero is known off the line); its shading thins to half its opacity, an honest picture of a tighter limit on how many could exist there, not of any known zeros. At {#ingham}: a small DIM tag 'best since Ingham, 1940' under the caption. Pause (scene end): hold, then everything fades out; the dial fades last.",
+          "pause_after": 0.9
+        }
+      ]
+    },
+    {
+      "id": "S11_Callback",
+      "title": "The hum of the zeros",
+      "purpose": "Back at the opening grid and its staircase, the viewer can say it in their own words: how evenly the primes are scattered is set by the zeros of one function; Riemann guessed they all lie on one line; if so, the primes stray no more than coin flips would; more than twelve trillion checked, all on the line; very probable, and still unproved after 167 years.",
+      "paragraphs": [
+        {
+          "sentences": [
+            "Let's go back to where we started: {#grid} the numbers up to a hundred, and {#stair} their staircase."
+          ],
+          "visual": "Empty BG. At {#grid}: the exact 10 by 10 grid from S01 fades in with the same framing and the 25 primes lit blue. At {#stair}: the blue tiles fly out and become the prime staircase up to 100 (same axes as S07: x = -6.6 to 3.4, y = -2.4 to 3.2) in the left two thirds; the INSET strip returns on the right with its ACCENT line and 100 zeros (range 0 to 240); the error dial fades in at its home (window ½ to 1, coin and pin at ½). Pause: hold.",
+          "pause_after": 0.8
+        },
+        {
+          "sentences": [
+            "The primes look scattered, but {#evenly} how evenly they are scattered is set by the zeros of one function.",
+            "Every wiggle in this staircase {#hum} is the hum of those zeros."
+          ],
+          "visual": "At {#evenly}: the teal smooth curve R(x) draws, and the first five waves (pink, green, purple, orange, blue; topic.zero_wave k = 1 to 5) rise one by one from their zero dots in the inset as thin enlarged ribbons across the top of the graph (y = 2.5 to 3.2, DIM tag 'enlarged'), each linked by a thin thread in its colour, then sink into the curve. At {#hum}: the rebuilt curve topic.rebuild(100) traces over the staircase; the 100 zero dots pulse softly in sequence up the line, like a slow ripple, in time with small glints moving along the curve. Pause: hold.",
+          "pause_after": 0.8
+        },
+        {
+          "sentences": [
+            "Riemann guessed they all sit {#line} on one straight line.",
+            "If he is right, the primes stray from Gauss's curve {#coins} no more than coin flips would."
+          ],
+          "visual": "At {#line}: the ACCENT line in the inset brightens and extends past the top of the frame. At {#coins}: on the dial, the ACCENT window glides from ½-to-1 down to a narrow glow on ½ drawn DASHED with a small DIM tag 'if Riemann is right', and the coin icon flips once. Pause: hold.",
+          "pause_after": 0.8
+        },
+        {
+          "sentences": [
+            "More than {#checked} twelve trillion have been checked, all on the line.",
+            "He called it {#probable} very probable. A hundred and sixty-seven years later, {#open} nobody has proved it."
+          ],
+          "visual": "At {#checked}: a small N readout '≈ 12.36 trillion zeros' with a GOOD check appears above the inset. At {#probable}: the 'sehr wahrscheinlich · very probable' card fades in small at the top left, beside '1859'. At {#open}: '1859' ticks to '2026' (N, 24, DIM); the dashed glow on the dial fades back to the full ½ to 1 window (honest status), and a single ACCENT '?' appears at the very top of the inset's line, where it leaves the frame. Final pause (2.0 s): everything fades slowly to the empty background, the '?' last.",
+          "pause_after": 1.5
+        }
+      ]
+    }
+  ],
+  "pron": {
+    "Riemann": "/ɹˈimɑn/",
+    "Euler": "/ˈɔɪləɹ/",
+    "zeta": "/zˈeɪtə/",
+    "Siegel": "/zˈiɡəl/",
+    "Koch": "/kˈɔk/",
+    "Poussin": "/pusˈæn/",
+    "Hadamard": "/ˈædəmɑɹ/",
+    "Guth": "/ɡˈuθ/",
+    "Gauss": "/ɡˈaʊs/",
+    "Trudgian": "/tɹˈʌdʒiən/"
+  },
+  "pronunciation_notes": [
+    "Riemann = REE-mahn. Euler = OY-ler (the pron entry forces OY-ler). zeta = ZAY-tuh. Gauss = GOWSS.",
+    "Charles de la Vallée Poussin: 'de la' is a light 'duh lah'; Vallée = vah-LAY; Poussin = poo-SAN. Hadamard = AH-dah-mar. Check with Whisper and adjust.",
+    "Siegel = ZEE-gel. Helge von Koch = HEL-geh fon KOKE (Swedish). Guth rhymes with 'tooth'. Trudgian = TRUDGE-ee-an. Maynard, Platt, Hardy, Hilbert, Littlewood as in English.",
+    "Years as spoken: 'seventeen ninety-two', 'seventeen thirty-seven', 'eighteen fifty-nine', 'eighteen ninety-six', 'nineteen hundred', 'nineteen oh one', 'nineteen fourteen', 'nineteen thirty-two', 'nineteen forty', 'twenty twenty-one', 'twenty twenty-four', 'twenty twenty-six'. 'A hundred and sixty-seven years later' = 1859 to 2026.",
+    "'fourteen point one three', 'two point three', 'zero point eight', 'zero point nine nine' are read digit by digit.",
+    "S06 deliberately never says 'i' out loud; the screen label shows '½ + 14.13 i'.",
+    "The phrase 'half the digits' is the video's key refrain: S03 (coin flips, twice), S07 (the same one half). 'Coin flips, and no more' closes S03 and S08; S11 echoes it as 'no more than coin flips would'.",
+    "'Very probable' is a thread: S01 (the guess), S09 ('So very probable was no wild guess'), S11 (final line). S07 opens on the same card without repeating the phrase.",
+    "Questions to the viewer get 1.1 to 1.2 s pauses: S01 'where is the next prime?', S03 'how far off can Gauss's curve be?', S06 'Is that a coincidence?' (answered inside the same scene, 'It isn't').",
+    "S06 P2 'The sum can't reach in here, only the extended zeta' is the one-line guard against the misconception that zeros are where the sum 1 + 1/2^s + ... is zero.",
+    "'Zeta knows the primes.' is a short punchline at scene end: it gets the 0.9 s scene tail, so it does not rush."
+  ],
+  "facts": [
+    {
+      "claim": "There are 25 primes below 100; the next prime after 97 is 101; 98 = 2 × 49, 99 = 9 × 11, 100 = 2 × 50.",
+      "source": "script/checks/prime_counts_check.py ; https://oeis.org/A000040"
+    },
+    {
+      "claim": "Every whole number greater than one is a product of primes (in exactly one way).",
+      "source": "https://en.wikipedia.org/wiki/Fundamental_theorem_of_arithmetic"
+    },
+    {
+      "claim": "Up to 100,000 there are 9,592 primes and li(100,000) = 9,629.8 (gap about 38).",
+      "source": "script/checks/prime_counts_check.py ; research_facts.md §2"
+    },
+    {
+      "claim": "Bernhard Riemann's paper 'Ueber die Anzahl der Primzahlen unter einer gegebenen Grösse' appeared in November 1859 in the Monthly Reports of the Berlin Academy, about eight pages; he wrote it is 'very probable' (sehr wahrscheinlich) that all roots are real, and after some fleeting vain attempts set the search for a proof aside because his next objective did not need it.",
+      "source": "https://en.wikipedia.org/wiki/On_the_Number_of_Primes_Less_Than_a_Given_Magnitude ; https://www.claymath.org/sites/default/files/riemann1859.pdf ; https://en.wikipedia.org/wiki/Riemann_hypothesis"
+    },
+    {
+      "claim": "Riemann lived from 17 September 1826 to 20 July 1866 and died at 39.",
+      "source": "https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/ ; research_facts.md §0"
+    },
+    {
+      "claim": "The Riemann Hypothesis is a Clay Millennium Prize Problem with a prize of US$1,000,000 (announced 24 May 2000); unsolved as of September 2026.",
+      "source": "https://www.claymath.org/millennium/riemann-hypothesis/ ; https://en.wikipedia.org/wiki/Millennium_Prize_Problems"
+    },
+    {
+      "claim": "All zeros up to height 3·10^12, about 12.36 trillion zeros, lie on the critical line (Platt and Trudgian, rigorous, arXiv 2020, Bull. LMS 2021).",
+      "source": "https://arxiv.org/abs/2004.09765 ; https://londmathsoc.onlinelibrary.wiley.com/doi/10.1112/blms.12460 ; https://en.wikipedia.org/wiki/Riemann_hypothesis"
+    },
+    {
+      "claim": "Gauss first studied prime density 'in the year 1792 or 1793', aged 15 or 16, counting primes in blocks of a thousand in idle quarter hours (letter to Encke, 24 December 1849).",
+      "source": "https://en.wikipedia.org/wiki/Prime_number_theorem ; https://old.maa.org/sites/default/files/images/upload_library/46/Barnett_TRIUMPHS_MiniPSPs/MiniPSP_Origin_of_the_Prime_Number_Theorem_20190306.pdf"
+    },
+    {
+      "claim": "Primes among the thousand numbers starting at 1, 1,000, 10,000, 100,000, 10^6, 10^7, 10^8: 168, 135, 106, 81, 75, 61, 54.",
+      "source": "computed in drafting (sieve); reproduce in script/checks/prime_counts_check.py"
+    },
+    {
+      "claim": "Average gap between primes: 6.9 from 500 to 1,500 (144 primes) and 13.8 from 950,000 to 1,050,000 (7,227 primes), matching ln 1,000 = 6.9 and ln 10^6 = 13.8; ln x grows by ln 10 = 2.3026 per extra digit. The 120 numbers from 1,000 contain 19 primes; the 120 from 1,000,000 contain 7.",
+      "source": "computed in drafting (sieve up to 1.1·10^6) ; script/checks/prime_counts_check.py"
+    },
+    {
+      "claim": "Adding up the density 1/ln t gives the logarithmic integral (Gauss's curve); li(10^6) = 78,627.5 (Li = li − 1.045 is identical at this scale).",
+      "source": "script/checks/prime_counts_check.py ; https://en.wikipedia.org/wiki/Logarithmic_integral_function"
+    },
+    {
+      "claim": "The prime number theorem was proved independently in 1896 by Jacques Hadamard and Charles-Jean de la Vallée Poussin; the ratio of the prime count to li(x) tends to 1 while the difference is unbounded (0.946 and 9.6 at 1,000; 0.998 and 129.5 at 10^6; 0.99987 and 754.4 at 10^8). The key step was that zeta has no zeros on the line with real part 1.",
+      "source": "https://en.wikipedia.org/wiki/Prime_number_theorem ; script/checks/prime_counts_check.py ; research_facts.md §3.3, §7.2"
+    },
+    {
+      "claim": "After a million fair coin flips, heads minus tails is typically about a thousand from zero (root-mean-square exactly the square root of n).",
+      "source": "script/checks/random_walk_check.py"
+    },
+    {
+      "claim": "Up to a million, li(x) exceeds the prime count by about 129.5 (square root of 10^6 = 1,000).",
+      "source": "script/checks/prime_counts_check.py"
+    },
+    {
+      "claim": "Helge von Koch (1901) showed that the Riemann Hypothesis is equivalent to: prime count = li(x) + O(sqrt(x)·log x). Schoenfeld (1976): under RH, |π(x) − li(x)| < sqrt(x)·ln x/(8π) for x ≥ 2657 (549.7 at 10^6).",
+      "source": "https://en.wikipedia.org/wiki/Riemann_hypothesis#Distribution_of_prime_numbers ; https://zenodo.org/records/2347595 ; script/checks/prime_counts_check.py"
+    },
+    {
+      "claim": "Error dial: if Θ is the supremum of the real parts of the zeros, the error π(x) − li(x) is O(x^Θ log x) and is larger than x^(Θ−ε) infinitely often; since zeros on the line exist, Θ lies between 1/2 and 1, and Θ = 1/2 is exactly RH. It is not known whether Θ < 1 (quasi-Riemann hypothesis open), so nobody can prove the reading is below 0.99. The 1896 zero-free edge gives only error = o(x), so it does not narrow the window.",
+      "source": "Ingham, The Distribution of Prime Numbers (1932), Thm 30 ; https://en.wikipedia.org/wiki/Riemann_hypothesis ; research_facts.md §4.2"
+    },
+    {
+      "claim": "'As unruly as coin flips, and no more' compares error sizes only (square-root size fluctuations); the primes are deterministic.",
+      "source": "research_facts.md §4.2 (Cramér's model is heuristic)"
+    },
+    {
+      "claim": "1 + 1/4 + 1/9 + ... = π²/6 = 1.6449...: the Basel problem, solved by Euler (1734, announced 1735). Partial sums 1.5498 (10 terms), 1.6350 (100), 1.6439 (1000).",
+      "source": "https://en.wikipedia.org/wiki/Basel_problem ; script/checks/zeta_values_check.py"
+    },
+    {
+      "claim": "The harmonic series 1 + 1/2 + 1/3 + ... diverges, slowly (2.93 after 10 terms, 5.19 after 100, 7.49 after 1000, 14.39 after a million).",
+      "source": "script/checks/zeta_values_check.py ; https://en.wikipedia.org/wiki/Harmonic_series_(mathematics)"
+    },
+    {
+      "claim": "Euler's product formula, sum over n of 1/n^s = product over primes of 1/(1 − p^(−s)), was presented to the St Petersburg Academy on 25 April 1737 (E72); multiplying by (1 − p^(−s)) removes exactly the remaining multiples of p, leaving only the term 1.",
+      "source": "https://scholarlycommons.pacific.edu/euler-works/72/ ; https://en.wikipedia.org/wiki/Euler_product ; script/checks/zeta_values_check.py"
+    },
+    {
+      "claim": "Riemann introduced the letter ζ for the function in his 1859 paper and extended it to complex inputs.",
+      "source": "https://en.wikipedia.org/wiki/Riemann_zeta_function ; https://en.wikipedia.org/wiki/On_the_Number_of_Primes_Less_Than_a_Given_Magnitude"
+    },
+    {
+      "claim": "For s = σ + it, the term n^(−s) has length n^(−σ) and is turned by −t·ln n, so the partial sums form a spiral; the series converges only for real part greater than 1; ζ(2 + 3i) ≈ 0.798 − 0.114i.",
+      "source": "https://en.wikipedia.org/wiki/Riemann_zeta_function ; https://www.3blue1brown.com/lessons/zeta/ ; mpmath"
+    },
+    {
+      "claim": "Zeta extends uniquely to the whole complex plane except s = 1 (a pole): an analytic (complex-differentiable) function is determined everywhere by its values on any small region (identity theorem); for real functions many smooth extensions exist.",
+      "source": "https://en.wikipedia.org/wiki/Analytic_continuation ; https://en.wikipedia.org/wiki/Identity_theorem ; research_facts.md §6"
+    },
+    {
+      "claim": "The trivial zeros are at −2, −4, −6, ...; all other zeros lie strictly inside the strip with real part between 0 and 1, where the series does not converge.",
+      "source": "https://en.wikipedia.org/wiki/Riemann_zeta_function ; script/checks/zeta_values_check.py"
+    },
+    {
+      "claim": "Along the line 1/2 + it, ζ starts at ζ(1/2) = −1.46 and passes through 0 at t = 14.134725..., then 21.022, 25.011, 30.425, 32.935, 37.586, 40.919, 43.327, 48.005, 49.774.",
+      "source": "script/checks/zeros_check.py (mpmath.zetazero) ; https://oeis.org/A058303"
+    },
+    {
+      "claim": "Nontrivial zeros come in mirror pairs across the line with real part 1/2 (functional equation s ↔ 1 − s with complex conjugation, from Riemann 1859).",
+      "source": "https://en.wikipedia.org/wiki/Riemann_zeta_function#Riemann's_functional_equation ; research_facts.md §6"
+    },
+    {
+      "claim": "The Riemann Hypothesis: every nontrivial zero has real part exactly 1/2.",
+      "source": "https://www.claymath.org/millennium/riemann-hypothesis/"
+    },
+    {
+      "claim": "Riemann's explicit formula rebuilds the prime count exactly as R(x) − Σ R(x^ρ) − 1/ln x + (1/π)arctan(π/ln x), where R is Riemann's refinement of Gauss's curve (the term coming from the pole at s = 1) and each conjugate zero pair adds one real wave; with 100 zero pairs the curve matches the staircase on 2..100 to within 0.16 away from the risers.",
+      "source": "research_facts.md §8.1 (B) ; script/checks/staircase_rebuild_check.py ; script/checks/explicit_formula_check.py ; Zagier, 'The first 50 million prime numbers' (1977)"
+    },
+    {
+      "claim": "A zero β + iγ contributes a wave oscillating like cos(γ·ln x − arg ρ) (height sets frequency in ln x) with size about 2x^β/(|ρ|·ln x) (real part sets growth); at β = 1/2 the size grows like the square root of x (divided by a log).",
+      "source": "research_facts.md §8.1–8.2 ; https://terrytao.wordpress.com/tag/explicit-formula/"
+    },
+    {
+      "claim": "A hypothetical zero with real part 0.8 would give a wave growing like x^0.8, x^0.3 times the on-line size (4 at 100, 63 at 10^6); the error would then be at least of size x^(0.8−ε) infinitely often; its mirror twin sits at 0.2, and the larger real part sets the error.",
+      "source": "research_facts.md §8.2 (Ingham 1932)"
+    },
+    {
+      "claim": "Zeros on the critical line exist (the first at 14.13; infinitely many by Hardy 1914), so one half is the best possible error exponent.",
+      "source": "research_facts.md §4.2 and §8.2 ; https://en.wikipedia.org/wiki/Riemann_hypothesis"
+    },
+    {
+      "claim": "David Hilbert included the Riemann Hypothesis in his eighth problem, from his 1900 Paris lecture.",
+      "source": "https://en.wikipedia.org/wiki/Hilbert%27s_eighth_problem ; https://en.wikipedia.org/wiki/Hilbert%27s_problems"
+    },
+    {
+      "claim": "G. H. (Godfrey Harold) Hardy proved in 1914 that infinitely many zeros lie on the critical line.",
+      "source": "https://en.wikipedia.org/wiki/Riemann_hypothesis ; https://en.wikipedia.org/wiki/G._H._Hardy"
+    },
+    {
+      "claim": "Carl Ludwig Siegel published in 1932 his study of Riemann's unpublished notes, showing Riemann had computed the first zeros by hand (certainly near 14.1386 and 25.31) with the method now called the Riemann–Siegel formula.",
+      "source": "https://arxiv.org/abs/1810.05244 ; https://en.wikipedia.org/wiki/Riemann%E2%80%93Siegel_formula"
+    },
+    {
+      "claim": "Conrey (1989) proved more than two fifths (40%) of the zeros lie on the line; the record stayed near 41.7% (Pratt et al. 2020) until Alpöge and Furman (arXiv 2608.13637, August 2026, preprint) proved more than two thirds (67.25%), independently reproved by Lamzouri (arXiv 2609.02882).",
+      "source": "https://en.wikipedia.org/wiki/Riemann_hypothesis ; https://arxiv.org/abs/2608.13637 ; https://arxiv.org/abs/2609.02882 ; https://www.anthropic.com/research/riemann-zeta"
+    },
+    {
+      "claim": "A proportion, even 100%, of zeros on the line would not prove RH: infinitely many exceptions can still form a 0% share.",
+      "source": "research_facts.md §9.2"
+    },
+    {
+      "claim": "π(x) < li(x) for every x ever checked (proved up to 10^19), yet Littlewood proved in 1914 that the difference changes sign infinitely often; the first crossing is believed to be near 1.397·10^316 (a 317-digit number).",
+      "source": "https://en.wikipedia.org/wiki/Skewes%27s_number ; research_facts.md §3.4"
+    },
+    {
+      "claim": "Larry Guth and James Maynard (arXiv May 2024; Annals of Mathematics 203(2), 2026) proved a new bound limiting how many zeros can lie far from the critical line (near real part 3/4), the first improvement over Ingham's 1940 bound in that range.",
+      "source": "https://arxiv.org/abs/2405.20552 ; https://www.quantamagazine.org/sensational-proof-delivers-new-insights-into-prime-numbers-20240715/"
+    }
+  ]
+}

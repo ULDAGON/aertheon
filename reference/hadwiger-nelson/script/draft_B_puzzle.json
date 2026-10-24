@@ -1,0 +1,643 @@
+{
+  "title": "Paint the Plane: a puzzle nobody has finished",
+  "scenes": [
+    {
+      "id": "S01_Hook",
+      "title": "An endless floor and one stick",
+      "purpose": "The viewer knows the game (paint every point of an endless plane so a one-unit stick never lands on two equal colors), that the answer is still open, and that they will solve puzzles along the way.",
+      "paragraphs": [
+        {
+          "sentences": [
+            "Picture a flat {#floor} floor that stretches on forever in every direction.",
+            "Your job is to {#paints} paint every single point of it."
+          ],
+          "visual": "GLOBAL CONVENTIONS (all scenes): background #0E1117; 1 unit = 2.4 scene units unless a beat says otherwise; dots are filled circles of radius 0.07; a 'stick' is a yellow #FFD54A segment of exactly one unit, stroke width 5, always drawn between two dots; seven-color palette P1 red #E0525A, P2 blue #4C8DF6, P3 green #3DBE8B, P4 orange #F29B38, P5 purple #A77BE8, P6 teal #36C2CE, P7 pink #E86FB5 (no yellow in the palette, so sticks always stand out); every label is plain Text, never LaTeX. PUZZLE TAG: a small rounded label 'PUZZLE n' with yellow outline in the top-left corner; during each 'try it' pause a thin yellow ring timer next to the tag fills over exactly the pause length, then disappears. SCOREBOARD: top-right, caption 'colors needed' above the row '1 2 3 4 5 6 7 8 …'; a rounded highlight box covers the numbers still possible; ruled-out numbers dim to 30% gray. Each scene's transition happens under its first spoken words, never in silence. BEAT: the video opens on narration. At {#floor} the camera is close on a dark plane with a faint gray grid and pulls back slowly for about 3 s; the grid fades toward the frame edges so it reads as endless. At {#paints} seven round paint pots in P1 to P7 slide up along the bottom edge and irregular organic color blobs bloom outward from them across the whole plane (about 2.5 s, under the words). During the pause the last gaps fill, so every point is colored in a patchy, irregular painting.",
+          "pause_after": 0.7
+        },
+        {
+          "sentences": [
+            "There's just one rule. Drop a {#stick} stick exactly one unit long anywhere, at any angle.",
+            "Its two ends must land on {#ends} two different colors, {#hops} every single time."
+          ],
+          "visual": "At {#stick} a yellow stick with a dot at each end falls in from above and lands on the painting at center; a small label '1 unit' fades in under it. At {#ends} each end dot takes the color of the paint beneath it (one P1, one P2) and a green check pops above the stick. At {#hops} the stick hops to four new spots in quick succession, about 0.4 s each, landing at a new random angle each time with a check; on the fifth hop both ends land inside the same P3 blob, a red X flashes and the stick shakes. During the pause the X fades and the stick rests.",
+          "pause_after": 0.8
+        },
+        {
+          "sentences": [
+            "So what is the smallest {#board} number of colors that can do it?",
+            "After more than seventy-five years, we know the answer is {#tease} five, six, or seven, but we still don't know which."
+          ],
+          "visual": "At {#board} the scoreboard draws in top-right with all numbers lit and a large yellow '?' beside it. While the second sentence begins, the painting dims to 40% brightness. At {#tease} the numbers 5, 6 and 7 glow gold together for about one second as a spoiler, then return to normal. During the pause the '?' pulses once.",
+          "pause_after": 1.0
+        },
+        {
+          "sentences": [
+            "And you get to {#play} play along. At each step, I'll hand you a small {#puzzle} puzzle.",
+            "Some you'll solve, some you'll fail, and the {#hide} failures hide the best ideas."
+          ],
+          "visual": "At {#play} the painting fades out and the words 'your turn' appear at center in yellow. At {#puzzle} three small cards fan out below them, each drawn with sticks: a straight line, a triangle, a diamond. At {#hide} the triangle card's three corners flash red once. During the pause 'your turn' shrinks into the top-left corner and becomes the empty puzzle tag; the cards slide off to the left.",
+          "pause_after": 0.9
+        }
+      ]
+    },
+    {
+      "id": "S02_Rule",
+      "title": "The fine print",
+      "purpose": "Every point gets exactly one color; only the exact distance of one unit is forbidden, closer or farther may match; the size of the unit does not matter; the problem has a name and began with a student's question.",
+      "paragraphs": [
+        {
+          "sentences": [
+            "First, the fine print. {#one_color} Every point gets exactly one color, even the points right on a {#border} border."
+          ],
+          "visual": "Under the first words, a plane fades in split into two colors, P2 on the left and P4 on the right, meeting along a gentle vertical wavy border. At {#one_color} the camera zooms toward the border. At {#border} a row of tiny dots appears exactly on the border line and each one fills with either P2 or P4 in an irregular mix, none left blank; caption at bottom: 'every point: exactly one color'. During the pause the camera zooms back out.",
+          "pause_after": 0.6
+        },
+        {
+          "sentences": [
+            "Puzzle one. Here are {#pairs} three same-colored pairs of points.",
+            "{#which} Which of them break the rule?"
+          ],
+          "visual": "The two-color plane fades to the plain background. PUZZLE 1 tag appears top-left. At {#pairs} three pairs of P1 dots appear across the screen, each pair horizontal: left pair 1.4 units apart, middle pair 0.6 apart, right pair exactly 1.0 apart. No readouts yet. At {#which} a white '?' hovers above each pair. During the pause the ring timer fills.",
+          "pause_after": 1.2
+        },
+        {
+          "sentences": [
+            "Just one. The {#close} close pair is fine, and so is the {#far} far pair.",
+            "Only a distance of {#exact} exactly one is forbidden."
+          ],
+          "visual": "At {#close} the middle pair gets a readout '0.60' and a green check. At {#far} the left pair gets '1.40' and a green check. At {#exact} a yellow stick snaps between the right pair, readout '1.00', and a red X lands on it; both dots flash. During the pause the two allowed pairs fade out and the forbidden pair glides to center.",
+          "pause_after": 0.8
+        },
+        {
+          "sentences": [
+            "The size of the unit doesn't matter either. {#zoom} Zoom in or out, and it's {#same} exactly the same puzzle."
+          ],
+          "visual": "At {#zoom} the stick pair and a small patch of two-color painting behind it scale up to 3x, then down to 0.3x; the label '1 unit' stays glued to the stick the whole time. At {#same} everything returns to normal size and the pair becomes the canonical yellow stick with its '1 unit' label, identical to before. During the pause the stick shrinks into a small icon in the bottom-left corner.",
+          "pause_after": 0.6
+        },
+        {
+          "sentences": [
+            "This is the {#name} Hadwiger Nelson problem.",
+            "{#nelson} Edward Nelson asked it in nineteen fifty, as an eighteen-year-old student.",
+            "{#hadwiger} Hugo Hadwiger, a Swiss mathematician, worked on related questions and helped make it famous."
+          ],
+          "visual": "At {#name} the title 'The Hadwiger–Nelson problem' fades in at upper center. At {#nelson} a plain text card slides in on the left: 'Edward Nelson · asked it in 1950 · age 18'. At {#hadwiger} a card slides in on the right: 'Hugo Hadwiger · Swiss geometer'. No portraits. During the pause the cards and the title fade out.",
+          "pause_after": 0.8
+        }
+      ]
+    },
+    {
+      "id": "S03_Line",
+      "title": "Warm-up: an endless line",
+      "purpose": "On a line exactly two colors are needed, using alternating unit stripes that each keep their left end; the plane is harder because the stick can turn.",
+      "paragraphs": [
+        {
+          "sentences": [
+            "Puzzle two is a warm-up. Paint an endless {#line} line instead of a floor.",
+            "How many colors does a line {#ask} need?"
+          ],
+          "visual": "PUZZLE 2 tag. At {#line} a horizontal line draws across the full width at mid-height, with small tick marks every one unit. At {#ask} the yellow stick drops onto the line and slides slowly left and right along it; caption under the line: 'line: ? colors'. During the pause the ring timer fills.",
+          "pause_after": 1.1
+        },
+        {
+          "sentences": [
+            "{#one} One color fails at once. So try two, in alternating {#stripes} stripes exactly one unit long."
+          ],
+          "visual": "At {#one} the whole line turns P1; the stick's two end dots both show P1 and a red X flashes. At {#stripes} the line recolors into alternating P1 and P2 segments, each exactly one unit long, starting at the tick marks. During the pause the stripes settle.",
+          "pause_after": 0.6
+        },
+        {
+          "sentences": [
+            "Each stripe keeps its {#left} left end and hands its right end to the next stripe.",
+            "So the stick's two ends always land in {#slide} neighboring stripes, with different colors.",
+            "A line needs {#two} exactly two."
+          ],
+          "visual": "At {#left} zoom in on one boundary: every stripe shows a filled dot of its own color at its left end and a hollow circle at its right end, exactly where the next stripe's filled dot sits. At {#slide} zoom back out; the stick glides along the line for about 3 s, its end dots updating color continuously and always different, a green check riding above it. At {#two} the caption changes to 'line: exactly 2'. During the pause the check pulses once.",
+          "pause_after": 1.0
+        },
+        {
+          "sentences": [
+            "Now {#stretch} stretch the stripes into the plane. The stick can {#turn} turn, stand up inside {#fail} one stripe, and both ends match.",
+            "That freedom to turn is what makes the plane so much harder."
+          ],
+          "visual": "At {#stretch} each stripe extrudes up and down into a full-height vertical band one unit wide, alternating P1 and P2. At {#turn} the horizontal stick, centered inside one band, starts rotating about its midpoint. At {#fail} it reaches vertical: both ends sit in the same band, both end dots show the same color, red X. During the last sentence and the pause the stick keeps spinning slowly in place, its ends flashing red whenever they match.",
+          "pause_after": 1.0
+        }
+      ]
+    },
+    {
+      "id": "S04_Triangle",
+      "title": "Two colors? Try it.",
+      "purpose": "Two colors can never paint the plane, because three sticks in a triangle need three colors and any painting of the plane also paints those three points; a shape of dots and sticks is a trap.",
+      "paragraphs": [
+        {
+          "sentences": [
+            "Puzzle three. Back in the plane, can {#two} two colors do it?",
+            "Maybe a checkerboard, or something {#try} cleverer?"
+          ],
+          "visual": "PUZZLE 3 tag. At {#two} the vertical bands morph into a P1/P2 checkerboard of squares 0.8 units wide. At {#try} the checkerboard morphs into a swirly two-color marbled pattern; the stick hops twice and both times lands with two same-colored ends, a red X each time. During the pause the ring timer fills.",
+          "pause_after": 1.2
+        },
+        {
+          "sentences": [
+            "Here's why every attempt fails. Drop {#tri} three sticks into a triangle, every side exactly one unit.",
+            "The {#c1} first corner gets a color, and the {#c2} second gets the other.",
+            "The {#c3} third corner is one unit from both, and no color is left."
+          ],
+          "visual": "At {#tri} three yellow sticks drop onto the marbled pattern and click together into an equilateral triangle of side one unit at center, corners shown as gray dots. At {#c1} the bottom-left corner fills P1. At {#c2} the bottom-right corner fills P2. At {#c3} the top corner tries P1 (its left stick flashes red), then P2 (its right stick flashes red), and stays gray with a '?'. During the pause the triangle outline pulses red.",
+          "pause_after": 1.1
+        },
+        {
+          "sentences": [
+            "However you {#anywhere} paint the plane, these three points get painted too, wherever they sit.",
+            "So two colors never work. The plane needs {#three} at least three."
+          ],
+          "visual": "At {#anywhere} the triangle slides and turns across three different two-color backgrounds in turn (marbled, stripes, checkerboard); each time its corners pick up the colors beneath and at least one side flashes red. At {#three} scoreboard: 1 and 2 dim to gray, the highlight box shrinks to cover '3 4 5 6 7 8 …' and a small label '≥ 3' appears under it. During the pause the box settles.",
+          "pause_after": 1.0
+        },
+        {
+          "sentences": [
+            "A shape like this, {#dots} dots joined by one-unit sticks, is a trap.",
+            "If a trap {#rule} can't be colored, neither can the plane."
+          ],
+          "visual": "Background fades out, leaving the triangle alone at center. At {#dots} the label 'a trap: dots + sticks' appears above it. At {#rule} a caption appears beneath: 'trap can't be colored → plane can't be colored'. During the pause the triangle shrinks to a small icon in the bottom-left corner beside the stick icon.",
+          "pause_after": 0.7
+        }
+      ]
+    },
+    {
+      "id": "S05_Diamond",
+      "title": "The diamond rule",
+      "purpose": "With three colors, the two tips of a diamond (two unit triangles sharing a stick) always get the same color, which is allowed because they are about 1.73 units apart; then a second diamond is hinged on and swung until its top tip is exactly one unit from the first.",
+      "paragraphs": [
+        {
+          "sentences": [
+            "Now the big one. Are {#three} three colors enough?",
+            "First, a warm-up. {#glue} Glue two triangles along a shared stick to make a {#diamond} diamond."
+          ],
+          "visual": "PUZZLE 4 tag. At {#three} the scoreboard's '3' glows with a small '?'. At {#glue} two unit triangles slide in from left and right and join along one shared stick. Final diamond, in units, with the bottom tip at scene position (0, -1.9): bottom tip A (0, 0), middle dots (-0.5, 0.866) and (0.5, 0.866), top tip (0, 1.732). The shared stick is the horizontal one between the middle dots. At {#diamond} all five sticks glow once and the label 'diamond: 4 dots, 5 sticks' appears. During the pause the label fades.",
+          "pause_after": 0.7
+        },
+        {
+          "sentences": [
+            "{#color} Color it with three colors, any way you like, and watch the two {#tips} tips.",
+            "Try a {#again} few times. What do you notice?"
+          ],
+          "visual": "A small tray of three color chips appears bottom-left: P1, P2, P3. At {#color} the diamond fills with a valid coloring: bottom P1, middles P2 and P3, top P1. At {#tips} small white arrows point at the top and bottom tips. At {#again} two more valid colorings flash by, about 0.8 s each: bottom P3, middles P1 and P2, top P3; then bottom P2, middles P3 and P1, top P2. During the pause the ring timer fills and the two tips pulse together.",
+          "pause_after": 1.2
+        },
+        {
+          "sentences": [
+            "The tips always match. Here's why.",
+            "The two {#middle} middle dots share a stick, so they need two different colors.",
+            "Each {#tip} tip is joined to both of them, so it gets the {#left} only color left.",
+            "So {#same} both tips get the same leftover color."
+          ],
+          "visual": "Under the first sentence all dots reset to gray. At {#middle} the middle stick highlights and its two dots fill P2 and P3, with small labels 'color A' and 'color B' (colors are never named aloud). At {#tip} the top tip's two sticks to the middle dots highlight and a tiny three-chip menu appears above the top tip with P2 and P3 crossed out. At {#left} the top tip fills P1, the one chip remaining. At {#same} the bottom tip's two sticks highlight, the same menu appears below it, and it fills P1; both tips pulse together.",
+          "pause_after": 0.9
+        },
+        {
+          "sentences": [
+            "That's allowed, for now. The tips are about {#measure} one point seven three units apart, not one.",
+            "Call it the {#rule} diamond rule. With three colors, a diamond's tips always match."
+          ],
+          "visual": "At {#measure} a dashed gray line joins the two tips with the readout '≈ 1.73' and a green check; it is visibly longer than the '1 unit' stick icon. At {#rule} a boxed label appears to the right of the diamond: 'DIAMOND RULE: with 3 colors, the tips match'. During the pause the box stays; it remains on screen through the next scene.",
+          "pause_after": 1.1
+        },
+        {
+          "sentences": [
+            "Now the trap. {#copy} Copy the diamond, keep the same bottom tip, and {#swing} swing it open like scissors.",
+            "The {#gap} gap between the top tips grows smoothly from zero, so at some moment it's {#one} exactly one."
+          ],
+          "visual": "Colors clear to gray. At {#copy} a second, slightly transparent diamond lifts off the first and settles exactly on top of it, sharing bottom tip A. At {#swing} the copy rotates clockwise about A; a thin arc at A shows the opening angle. At {#gap} a dashed line joins the two top tips with a live readout counting up from '0.00' (the gap equals 2 × 1.732 × sin(angle / 2)). At {#one} the rotation stops at exactly 33.557 degrees as the readout reaches '1.00'; the copy's dots are then at (0.062, 0.998), (0.895, 0.445) and top tip (0.957, 1.443), and the first diamond's top tip is still at (0, 1.732). During the pause the readout blinks '1.00'.",
+          "pause_after": 0.8
+        }
+      ]
+    },
+    {
+      "id": "S06_Spindle",
+      "title": "The trap: seven dots",
+      "purpose": "No three-coloring of the Moser spindle exists: the diamond rule forces both top tips to match the shared bottom tip, but the top tips are joined by a stick; since any painting of the plane paints these seven dots, the plane needs at least four colors.",
+      "paragraphs": [
+        {
+          "sentences": [
+            "Freeze it there, and join the top tips with one more {#stick} stick.",
+            "{#count} Seven dots, eleven sticks. Puzzle five: color them with three colors.",
+            "{#pause} Pause and try it, if you like."
+          ],
+          "visual": "At {#stick} the dashed line becomes a solid yellow stick between the two top tips; then the whole figure rotates 16.779 degrees counterclockwise about A into the symmetric pose (A at bottom center, top tips at (-0.5, 1.658) and (0.5, 1.658), coordinates as in research_facts section 4.3). Some sticks cross; that is fine, only lengths matter. At {#count} the seven dots flash in turn, then the eleven sticks tick in turn, about 0.1 s each, while a counter reads '7 dots · 11 sticks'. PUZZLE 5 tag appears. At {#pause} a pause symbol '❚❚' appears next to the tag. During the pause the ring timer fills.",
+          "pause_after": 1.3
+        },
+        {
+          "sentences": [
+            "Most attempts go like this. The {#a} bottom takes one color, and the {#b} first middle pair takes the other two.",
+            "So the {#c} first top tip gets the leftover.",
+            "The {#d} second diamond goes the same way, until its top tip has {#stuck} nothing left."
+          ],
+          "visual": "Three-chip tray P1, P2, P3 at bottom-left. Dot names for the animator only: A bottom; left diamond middles B1, C1 and top D1; right diamond middles B2, C2 and top D2. At {#a} A fills P1. At {#b} B1 and C1 fill P2 and P3. At {#c} D1 fills P1. At {#d} B2 and C2 fill P2 and P3. At {#stuck} D2 tries P1 (the top stick D1–D2 flashes red), then P2 (a middle stick flashes red), then P3 (the other middle stick flashes red), and stays gray with a '?'. During the pause the top stick glows red.",
+          "pause_after": 1.0
+        },
+        {
+          "sentences": [
+            "That's not bad luck. The diamond rule forces the {#rule1} first top tip to match the bottom.",
+            "It forces the {#rule2} second top tip to match the bottom too.",
+            "So the top tips match each other, but {#clash} a stick joins them."
+          ],
+          "visual": "Under the first words all dots reset to gray and the DIAMOND RULE box glows. At {#rule1} the left diamond (A, B1, C1, D1) is outlined in white and a curved arrow runs from A to D1 with an '=' sign; A and D1 fill the same color. At {#rule2} the right diamond is outlined and a curved arrow runs from A to D2 with '='; D2 fills that same color. At {#clash} the top stick D1–D2 flashes red and a large red X lands on it. During the pause hold the X.",
+          "pause_after": 1.3
+        },
+        {
+          "sentences": [
+            "We never chose {#any} which colors to use, so every three-coloring fails.",
+            "And wherever these seven dots sit on the {#plane} painted plane, they get painted too.",
+            "So the plane needs {#four} at least four colors."
+          ],
+          "visual": "At {#any} the chip tray cycles through two other color triples (P4, P5, P6, then P7, P2, P1) and the red X stays put each time. At {#plane} zoom out: the spindle shrinks and slides over a patchy three-color painting to three different positions and angles; each time its dots pick up the colors beneath and some stick flashes red. At {#four} scoreboard: '3' dims, the box now covers '4 5 6 7 8 …', label '≥ 4'. During the pause the box settles.",
+          "pause_after": 1.2
+        },
+        {
+          "sentences": [
+            "This is the {#name} Moser spindle, published by the brothers Leo and William Moser in nineteen sixty-one.",
+            "Its trick is to {#force} force two dots to match, then {#forbid} forbid it with a single stick."
+          ],
+          "visual": "The spindle returns to center with gray dots. At {#name} a title appears above it: 'the Moser spindle · 1961'. At {#force} both diamonds glow blue and the word 'FORCE' appears beside them, with '=' arrows from A to both top tips. At {#forbid} the top stick glows red and the word 'FORBID' appears beside it. During the pause the words 'FORCE + FORBID' shrink into the bottom-left corner, where they stay for later.",
+          "pause_after": 0.9
+        }
+      ]
+    },
+    {
+      "id": "S07_Hexagons",
+      "title": "Seven colors are enough",
+      "purpose": "To show a number of colors is enough you need a pattern for the whole plane; squares give nine, and hexagons just under one unit corner to corner in a repeating seven-color flower give seven, so the answer is at most seven.",
+      "paragraphs": [
+        {
+          "sentences": [
+            "Puzzle six flips the game. Can you {#flip} paint the whole plane with some {#enough} fixed number of colors?"
+          ],
+          "visual": "PUZZLE 6 tag. At {#flip} the spindle icon flips over like a card and becomes a blank plane filling the screen. At {#enough} the scoreboard's right end '8 …' glows with a small '?'. During the pause the ring timer fills.",
+          "pause_after": 1.1
+        },
+        {
+          "sentences": [
+            "Start with {#squares} squares whose {#diag} diagonal is a bit shorter than one stick.",
+            "No stick {#fit} fits inside one, so each square can be a single color."
+          ],
+          "visual": "Scale for this scene: 1 unit = 1.6 scene units. At {#squares} a grid of gray-outlined squares with side 2/3 unit fills the screen. At {#diag} one square highlights and its diagonal draws with readout '0.94', next to a yellow stick labeled '1.00'. At {#fit} the stick spins about the square's center; its ends always poke outside the square. During the pause the square fills with P1.",
+          "pause_after": 0.6
+        },
+        {
+          "sentences": [
+            "Repeat a {#block} three by three block of nine colors, and {#twins} same-colored squares end up more than one unit apart.",
+            "{#nine} Nine colors work. Can you beat nine?"
+          ],
+          "visual": "At {#block} a 3 by 3 block colors in using P1 to P7 plus two extra colors used only in this beat (X1 olive #9DB33A, X2 sand #C9A47A), then the block repeats across the whole grid. At {#twins} all P1 squares glow and the rest dim; a dashed segment between two neighboring P1 squares reads '1.33', with a yellow stick beside it that visibly falls short. At {#nine} a small tag '9 works' appears near the scoreboard's '…'. During the pause the ring timer fills.",
+          "pause_after": 1.2
+        },
+        {
+          "sentences": [
+            "{#hex} Hexagons are rounder, so they pack tighter.",
+            "Make each one just under one unit from {#corner} corner to corner, so {#spin} no stick fits inside."
+          ],
+          "visual": "At {#hex} the square grid morphs into a pointy-top hexagon grid with side 0.45 unit, gray outlines. At {#corner} one hexagon highlights and its corner-to-corner diagonal draws with readout '0.90', next to the stick labeled '1.00'. At {#spin} the stick spins about the hexagon's center; its ends always stay outside the hexagon. During the pause the hexagon fills with P1.",
+          "pause_after": 0.6
+        },
+        {
+          "sentences": [
+            "Now color a {#flower} flower: one hexagon in the middle, six around it, seven colors.",
+            "{#tile} Repeat it across the plane, and every same-colored twin sits {#gap} more than one unit away."
+          ],
+          "visual": "At {#flower} the center hexagon is P1 and its six neighbors fill P2 to P7 one by one, clockwise, about 0.15 s each. At {#tile} the pattern spreads outward ring by ring until the screen is full, using color = (q + 3r) mod 7 in axial coordinates (see research_facts section 5.1). At {#gap} all P1 hexagons glow and the rest dim; a dashed segment between the closest points of two nearest P1 hexagons reads '1.19', with a yellow stick beside it that falls short. During the pause hold.",
+          "pause_after": 0.8
+        },
+        {
+          "sentences": [
+            "{#both} Too small to hold a stick, too far to reach a twin. {#seven} Seven colors are always enough."
+          ],
+          "visual": "At {#both} two small captions appear side by side at the bottom: 'too small: 0.90 < 1' and 'too far: 1.19 > 1'. At {#seven} scoreboard: '8 …' dims; the box now covers '4 5 6 7', label '≥ 4' on the left and '≤ 7' on the right; the '9 works' tag disappears. During the pause the box settles with a soft glow.",
+          "pause_after": 1.2
+        },
+        {
+          "sentences": [
+            "One honest detail: points right on a {#border} border just borrow a neighbor's color, and there's {#spare} room to spare.",
+            "{#isbell} John Isbell, a friend of Nelson's, found this pattern in nineteen fifty."
+          ],
+          "visual": "At {#border} zoom into a corner where three hexagons meet; tiny dots on the border lines take the colors of neighboring hexagons in an irregular mix. At {#spare} the two captions '0.90 < 1' and '1.19 > 1' pulse once. At {#isbell} zoom back out to the full tiling and a text card appears: 'John Isbell · 1950'. During the pause the card fades.",
+          "pause_after": 0.8
+        }
+      ]
+    },
+    {
+      "id": "S08_Stall",
+      "title": "Sixty-eight quiet years",
+      "purpose": "From 1950 to 2018 the answer stayed between four and seven; ruling out a number needs one finite trap while showing a number works needs a whole-plane pattern, and the missing piece was a trap four colors could not escape.",
+      "paragraphs": [
+        {
+          "sentences": [
+            "So by {#pinned} nineteen fifty, the answer was pinned between four and seven, and then it stayed stuck for {#years} sixty-eight years."
+          ],
+          "visual": "At {#pinned} a horizontal timeline draws across the middle of the screen with a marker at '1950'; a copy of the scoreboard window '4 5 6 7' drops onto the marker. At {#years} the marker slides along the timeline to '2018' over about 3 s while decade ticks pass (1960, 1970 and so on); the window rides along unchanged, with a small lock icon on it. During the pause the marker settles at 2018.",
+          "pause_after": 0.7
+        },
+        {
+          "sentences": [
+            "The two sides need {#tools} different tools.",
+            "To rule a number out, you need one {#trap} finite trap.",
+            "To show a number works, you need a {#pattern} pattern for the whole endless plane."
+          ],
+          "visual": "Timeline slides up and shrinks. At {#tools} the screen splits in two panels with headers 'RULE OUT' on the left and 'SHOW IT WORKS' on the right. At {#trap} a small Moser spindle draws in the left panel. At {#pattern} the seven-color hexagon tiling spreads across the right panel and off its edges. During the pause hold.",
+          "pause_after": 0.8
+        },
+        {
+          "sentences": [
+            "In {#theorem} nineteen fifty-one, de Bruijn and Erdős proved something reassuring.",
+            "Under the standard rules of mathematics, if four colors can't paint the plane, some {#finite} finite trap proves it."
+          ],
+          "visual": "At {#theorem} a text card appears at top center: 'de Bruijn & Erdős · 1951'. At {#finite} the left panel's spindle is replaced by a gray cloud of many dots and sticks with a '?' and the label 'a finite trap for 4 colors?'. During the pause the card fades.",
+          "pause_after": 0.8
+        },
+        {
+          "sentences": [
+            "So here was the {#puzzle} puzzle nobody could crack: find a trap that four colors can't escape.",
+            "{#erdos} Paul Erdős suspected one existed, but for decades, nobody found it."
+          ],
+          "visual": "PUZZLE 7 tag appears with a small lock beside it. At {#puzzle} the gray cloud grows to fill the left panel and pulses; the right panel fades. At {#erdos} a text card appears: 'Paul Erdős: guessed at least 5'. The cloud's dots flicker through failed searches as the sentence runs. During the pause the cloud fades to near-transparent.",
+          "pause_after": 0.9
+        }
+      ]
+    },
+    {
+      "id": "S09_Breakthrough",
+      "title": "Twenty eighteen: five",
+      "purpose": "In 2018 Aubrey de Grey built a trap four colors cannot escape by scaling up the spindle's force-and-forbid trick; a computer checked it by following forced colors and others confirmed it, so the plane needs at least five colors.",
+      "paragraphs": [
+        {
+          "sentences": [
+            "The trap turned up in {#year} twenty eighteen, from {#grey} Aubrey de Grey, a biologist best known for his research on aging.",
+            "He took on the problem as a hobby."
+          ],
+          "visual": "At {#year} the timeline returns briefly with its marker at '2018'; the lock icon cracks open. At {#grey} a plain text card appears: 'Aubrey de Grey · biologist · 2018'. No portrait. Under the second sentence the timeline slides away. During the pause the card fades.",
+          "pause_after": 0.7
+        },
+        {
+          "sentences": [
+            "His trap scales up the spindle's trick. The building block is a {#wheel} wheel, a hexagon of sticks around a center dot.",
+            "With four colors, a wheel sometimes has {#triple} three alternate corners of the same color."
+          ],
+          "visual": "At {#wheel} a regular hexagon of side one unit draws at center with its center dot and six spokes: seven dots, twelve sticks, all yellow. At {#triple} it takes a valid four-coloring: center P4, rim corners 0, 2 and 4 all P1, rim corners 1, 3 and 5 as P2, P3, P2; a dashed P1 triangle joins the three P1 corners (side about 1.73, not a stick). During the pause the dashed triangle pulses.",
+          "pause_after": 0.7
+        },
+        {
+          "sentences": [
+            "One giant piece {#force} forces at least one of its wheels to have that triple.",
+            "A second piece, full of Moser spindles, {#forbid} forbids it on its central wheel.",
+            "Put a copy of the second on {#glue} every wheel of the first, and four colors run out of room."
+          ],
+          "visual": "Small caption bottom-right for the whole paragraph: 'illustration, not the real graph'. At {#force} a large cloud on the left, made of many small wheels, appears with header 'FORCES a triple'; one wheel inside it flashes a dashed triangle. At {#forbid} a smaller cloud on the right, with little spindle shapes inside and one wheel at its center, appears with header 'FORBIDS a triple'. At {#glue} many copies of the right cloud fly onto the wheels of the left cloud one after another; the merged cloud flashes red. During the pause the 'FORCE + FORBID' words from the spindle scene slide in beside it.",
+          "pause_after": 1.0
+        },
+        {
+          "sentences": [
+            "The first version had {#twenty} over twenty thousand dots. He trimmed it to {#trim} fifteen hundred and eighty-one.",
+            "So the plane needs {#five} at least five colors."
+          ],
+          "visual": "At {#twenty} the merged cloud becomes a dense illustrative web of dots and sticks with a counter '20,425 dots'. At {#trim} the web thins out as the counter ticks down to '1,581'. At {#five} scoreboard: '4' dims, the box now covers '5 6 7', label '≥ 5' on the left and '≤ 7' on the right; a gold glow. During the pause hold on the new scoreboard.",
+          "pause_after": 1.4
+        },
+        {
+          "sentences": [
+            "A computer {#check} checked it, not by trying every coloring, since there are far too many, but {#cascade} one forced color at a time.",
+            "Within days, {#confirm} others confirmed it with completely different software."
+          ],
+          "visual": "At {#check} two numbers appear side by side: 'ways to 4-color it: about 10⁹⁵²' and 'atoms in the universe: about 10⁸⁰'. At {#cascade} zoom into a small patch of the web: one dot is colored, then its neighbors color in like falling dominoes; one branch hits a dead end and flashes red, rewinds, and continues. At {#confirm} three independent green check marks stamp onto the web, labeled 'independent check'. During the pause hold.",
+          "pause_after": 0.8
+        }
+      ]
+    },
+    {
+      "id": "S10_Shrink",
+      "title": "How small can a trap be?",
+      "purpose": "An open online collaboration shrank the five-color trap from 1,581 dots to 509, still the smallest known, and there is now a proof people can check by hand.",
+      "paragraphs": [
+        {
+          "sentences": [
+            "That set off a {#puzzle} new puzzle. How small can a five-color trap be?",
+            "{#polymath} Professionals and amateurs teamed up online, and the count {#fall} began to fall."
+          ],
+          "visual": "PUZZLE 8 tag. At {#puzzle} the counter '1,581' sits at center above the web, with a downward arrow. At {#polymath} dozens of small glowing dots, one per person, stream in from the screen edges and gather around the web; label 'open online collaboration · 2018'. At {#fall} the counter starts ticking down and the web begins losing dots. During the pause the ticking continues softly.",
+          "pause_after": 0.6
+        },
+        {
+          "sentences": [
+            "Within a week it dropped to {#heule} eight hundred and seventy-four, and by May, to {#may} five hundred and fifty-three.",
+            "In twenty twenty, {#parts} Jaan Parts found one with just {#record} five hundred and nine dots."
+          ],
+          "visual": "At {#heule} the counter lands on '874' with a small tag 'April 2018'. At {#may} it lands on '553', tag 'May 2018'. At {#parts} it ticks through '529', '510' and stops; a text card 'Jaan Parts · 2020'. At {#record} the counter locks on '509' in gold and the web glows. During the pause hold.",
+          "pause_after": 0.9
+        },
+        {
+          "sentences": [
+            "That's still the {#known} smallest known. The true minimum is somewhere {#min} between twenty-eight and five hundred and nine.",
+            "Parts also wrote a {#hand} proof that a patient person can check entirely by hand."
+          ],
+          "visual": "At {#known} the tag 'smallest known' appears under '509'. At {#min} a number line from 0 to 600 draws at the bottom with a highlighted band from 28 to 509 labeled 'true minimum: somewhere here'. At {#hand} a simple stack of paper pages with a pencil check mark appears beside the web, labeled 'checkable by hand · 2020'. During the pause hold.",
+          "pause_after": 0.9
+        }
+      ]
+    },
+    {
+      "id": "S11_Frontier",
+      "title": "Five, six, or seven",
+      "purpose": "Today the answer is five, six, or seven; a six-color trap would need at least forty-two dots and none is known, a better pattern would have to be strange, a slightly blurred rule gives exactly seven, and the last puzzle is still open.",
+      "paragraphs": [
+        {
+          "sentences": [
+            "On a line, the answer is {#line} two. In the plane, it's still {#board} five, six, or seven.",
+            "Why is the last step so hard?"
+          ],
+          "visual": "At {#line} the striped line from the warm-up flashes back at the top with its caption 'line: exactly 2'. At {#board} the scoreboard glides to center and enlarges; the box covers '5 6 7' and glows. Under the question the line fades. During the pause the numbers 5, 6, 7 pulse one after another.",
+          "pause_after": 0.7
+        },
+        {
+          "sentences": [
+            "To prove six, you'd need a {#six} trap that five colors can't escape.",
+            "None is known, and it would need {#fortytwo} at least forty-two dots."
+          ],
+          "visual": "Scoreboard shrinks back to top-right. At {#six} the left panel returns with header 'RULE OUT 5' and an empty dashed outline with a '?'. At {#fortytwo} the label 'none known · at least 42 dots' appears under the outline. During the pause hold.",
+          "pause_after": 0.7
+        },
+        {
+          "sentences": [
+            "To prove five or six is enough, you'd need a {#pattern} pattern.",
+            "Patterns made of {#polygons} ordinary polygon patches need all seven, so it would have to be {#strange} strange."
+          ],
+          "visual": "At {#pattern} the right panel returns with header 'SHOW 5 OR 6 WORKS'. At {#polygons} small thumbnails of tidy tilings (hexagons, squares, a mixed polygon map) flash in the panel, each stamped '7 needed'. At {#strange} the thumbnails dissolve into a speckled, grainy noise texture with a '?' on it. During the pause hold.",
+          "pause_after": 0.8
+        },
+        {
+          "sentences": [
+            "Stranger still, {#blur} blur the rule a little, forbidding every distance in a thin band around one.",
+            "Mathematicians have shown the answer then becomes {#seven} exactly seven.",
+            "The whole mystery lives in that {#exact} one exact distance."
+          ],
+          "visual": "Panels fade; the yellow stick returns at center. At {#blur} it becomes a soft glowing band whose length varies from 0.97 to 1.03 units, labeled 'forbidden: anything close to 1'. At {#seven} a small second scoreboard labeled 'blurry rule' appears under the main one, showing only '7' lit. At {#exact} the band sharpens back into a razor-thin stick labeled 'exactly 1', and the main scoreboard's '5 6 7' glows. During the pause the blurry-rule board fades.",
+          "pause_after": 1.1
+        },
+        {
+          "sentences": [
+            "Picture the {#floor} floor again, and the stick sliding across it.",
+            "Somewhere there's either a {#either} trap five colors can't escape, or a {#unpainted} pattern nobody has painted yet.",
+            "That's the last puzzle, and it's {#open} still open. Maybe you'll be the one to solve it."
+          ],
+          "visual": "At {#floor} the patchy painted floor from the opening fades back in, and the yellow stick drifts across it, spinning and landing, its ends flashing two colors each time, exactly as in the first scene. At {#either} a faint gray outline of an unknown web of dots and sticks appears on the left side of the floor. At {#unpainted} a faint shimmering, unfinished patch of pattern appears on the right side. At {#open} the PUZZLE tag in the top-left changes to 'PUZZLE ?' and the scoreboard's '5 6 7' glows beside a yellow '?'. Under the final sentence the camera slowly pulls back as at the start. During the pause the image fades to black; the stick is the last thing to fade.",
+          "pause_after": 1.4
+        }
+      ]
+    }
+  ],
+  "pronunciation_notes": [
+    "Hadwiger: written plainly; the engine applies its fixed pronunciation (HAHD-vig-er).",
+    "Nelson: NEL-sun. Isbell: IZ-bel.",
+    "Moser: MOH-zer (the brothers Leo and William Moser).",
+    "Aubrey de Grey: AW-bree duh GRAY.",
+    "Erdős: AIR-dish; Kokoro likely needs a phoneme override for the letter ő.",
+    "de Bruijn: duh BROWN (Dutch).",
+    "Jaan Parts: YAHN PARTS.",
+    "one point seven three: read as written, a decimal number, not a time.",
+    "three-coloring: THREE-color-ing, one word with a small stress on three.",
+    "twenty eighteen and twenty twenty are years; nineteen fifty, nineteen fifty-one and nineteen sixty-one are years."
+  ],
+  "facts": [
+    {
+      "claim": "The problem asks for the fewest colors so that no two points exactly one unit apart share a color; closer or farther points may match.",
+      "source": "https://en.wikipedia.org/wiki/Hadwiger%E2%80%93Nelson_problem"
+    },
+    {
+      "claim": "The size of the unit does not matter: scaling the plane turns a coloring for one distance into a coloring for any other distance.",
+      "source": "https://en.wikipedia.org/wiki/Hadwiger%E2%80%93Nelson_problem (elementary scaling argument; research_facts.md section 1.2)"
+    },
+    {
+      "claim": "Today the answer is known to be five, six, or seven, and which one is unknown.",
+      "source": "https://mathworld.wolfram.com/Hadwiger-NelsonProblem.html"
+    },
+    {
+      "claim": "More than seventy-five years have passed since the question was asked in 1950 (as of 2026).",
+      "source": "https://www.cs.umd.edu/~gasarch/BLOGPAPERS/soifer.pdf"
+    },
+    {
+      "claim": "Edward Nelson asked the question in 1950, at age eighteen, while a student (University of Chicago).",
+      "source": "https://www.cs.umd.edu/~gasarch/BLOGPAPERS/soifer.pdf ; https://www.quantamagazine.org/decades-old-graph-problem-yields-to-amateur-mathematician-20180417/"
+    },
+    {
+      "claim": "Hugo Hadwiger was a Swiss mathematician who published related results (1945) and published the problem in 1961, helping make it widely known.",
+      "source": "https://en.wikipedia.org/wiki/Hugo_Hadwiger ; https://en.wikipedia.org/wiki/Hadwiger%E2%80%93Nelson_problem"
+    },
+    {
+      "claim": "A line needs exactly two colors: alternating half-open stripes of length one work, one color fails.",
+      "source": "https://web.archive.org/web/20220216001534/https://asone.ai/polymath/index.php?title=Hadwiger-Nelson_problem"
+    },
+    {
+      "claim": "An equilateral triangle with unit sides forces three colors, so two colors never suffice.",
+      "source": "https://en.wikipedia.org/wiki/Hadwiger%E2%80%93Nelson_problem"
+    },
+    {
+      "claim": "With three colors, the two tips of a unit rhombus made of two equilateral triangles must share a color; the tips are the square root of three, about 1.73, apart.",
+      "source": "https://en.wikipedia.org/wiki/Moser_spindle"
+    },
+    {
+      "claim": "Rotating the second rhombus about the shared tip, the tip-to-tip gap grows continuously from zero and equals one at an angle of about 33.56 degrees.",
+      "source": "research_facts.md section 4.3 ; script/checks/spindle_check.py"
+    },
+    {
+      "claim": "The Moser spindle has seven vertices and eleven edges, cannot be three-colored, and so shows the plane needs at least four colors.",
+      "source": "https://en.wikipedia.org/wiki/Moser_spindle"
+    },
+    {
+      "claim": "The spindle was published by the brothers Leo and William Moser in 1961 (Canadian Mathematical Bulletin 4).",
+      "source": "https://en.wikipedia.org/wiki/Moser_spindle ; https://doi.org/10.1017/S0008439500025753"
+    },
+    {
+      "claim": "Squares with side two thirds (diagonal about 0.94) in a repeating three by three block of nine colors keep same-colored squares 4/3 apart, so nine colors suffice.",
+      "source": "https://www.quantamagazine.org/the-numbers-and-geometry-behind-a-math-coloring-puzzle-20180618/"
+    },
+    {
+      "claim": "Hexagons slightly less than one unit corner to corner, colored in a repeating seven-color pattern, keep same-colored hexagons more than one unit apart, so seven colors suffice.",
+      "source": "https://arxiv.org/abs/1804.02385 (section 1) ; https://en.wikipedia.org/wiki/Hadwiger%E2%80%93Nelson_problem"
+    },
+    {
+      "claim": "Border points can take the color of any adjacent hexagon without breaking the rule, because the inequalities have slack (diameter 0.90 < 1, same-color gap about 1.19 > 1 at side 0.45).",
+      "source": "research_facts.md section 5.2 ; script/checks/hexagon_check.py"
+    },
+    {
+      "claim": "John Isbell, Nelson's friend, found the seven-color hexagon coloring in 1950.",
+      "source": "https://www.cs.umd.edu/~gasarch/BLOGPAPERS/soifer.pdf ; https://arxiv.org/abs/1804.02385"
+    },
+    {
+      "claim": "The bounds four and seven date from 1950 and neither improved until 2018, sixty-eight years.",
+      "source": "https://arxiv.org/abs/1804.02385 ; https://www.cs.umd.edu/~gasarch/BLOGPAPERS/soifer.pdf"
+    },
+    {
+      "claim": "de Bruijn and Erdős (1951): under the standard axioms (with a weak form of choice), if every finite subgraph is k-colorable then the whole graph is, so if four colors cannot paint the plane some finite unit-distance graph proves it.",
+      "source": "https://en.wikipedia.org/wiki/De_Bruijn%E2%80%93Erd%C5%91s_theorem_(graph_theory)"
+    },
+    {
+      "claim": "Paul Erdős believed the answer was at least five.",
+      "source": "https://www.cs.umd.edu/~gasarch/BLOGPAPERS/soifer.pdf"
+    },
+    {
+      "claim": "In 2018 Aubrey de Grey, a biologist known for research on aging and an amateur mathematician, proved the plane needs at least five colors.",
+      "source": "https://www.quantamagazine.org/decades-old-graph-problem-yields-to-amateur-mathematician-20180417/ ; https://arxiv.org/abs/1804.02385"
+    },
+    {
+      "claim": "de Grey's building block is a unit hexagon with its center (seven points, twelve edges), which in some four-colorings has three alternate rim points of one color.",
+      "source": "https://arxiv.org/abs/1804.02385"
+    },
+    {
+      "claim": "One graph (L) forces some wheel to contain a same-colored triple; another (M), built from many Moser spindles, forbids a triple on its central wheel; placing a copy of M on every wheel of L gives a graph with no four-coloring.",
+      "source": "https://arxiv.org/abs/1804.02385 ; https://www.quantamagazine.org/decades-old-graph-problem-yields-to-amateur-mathematician-20180417/"
+    },
+    {
+      "claim": "The first graph had 20,425 vertices; de Grey trimmed it to 1,581 vertices.",
+      "source": "https://arxiv.org/abs/1804.02385 ; https://mathworld.wolfram.com/deGreyGraphs.html"
+    },
+    {
+      "claim": "The check was not brute force (4 to the power 1,581 is about 10 to the 952, far more than the roughly 10 to the 80 atoms in the observable universe); de Grey's program followed forced colors with backtracking.",
+      "source": "https://arxiv.org/abs/1804.02385 (section 4.3) ; computed: 1581 × log10(4) ≈ 951.9"
+    },
+    {
+      "claim": "Within days, others independently confirmed the result using different software (SAT solvers).",
+      "source": "https://scottaaronson.blog/?p=3697 ; https://gilkalai.wordpress.com/2018/04/10/aubrey-de-grey-the-chromatic-number-of-the-plane-is-at-least-5/"
+    },
+    {
+      "claim": "Professionals and amateurs collaborated online (Polymath16) to find smaller five-chromatic unit-distance graphs.",
+      "source": "https://polymathprojects.org/2018/04/10/polymath-proposal-finding-simpler-unit-distance-graphs-of-chromatic-number-5/ ; https://dustingmixon.wordpress.com/2021/02/01/polymath16-seventeenth-thread-declaring-victory/"
+    },
+    {
+      "claim": "Marijn Heule reduced the graph to 874 vertices on 14 April 2018, six days after de Grey's arXiv posting, and to 553 vertices by 18 May 2018.",
+      "source": "https://www.cs.umd.edu/~gasarch/BLOGPAPERS/soifer.pdf ; https://arxiv.org/abs/1805.12181"
+    },
+    {
+      "claim": "Jaan Parts found a 509-vertex five-chromatic unit-distance graph, published in 2020, still the smallest known.",
+      "source": "https://arxiv.org/abs/2010.12665 ; https://mathworld.wolfram.com/PartsGraphs.html ; https://mathworld.wolfram.com/Hadwiger-NelsonProblem.html"
+    },
+    {
+      "claim": "Any five-chromatic unit-distance graph has at least 28 vertices, so the true minimum is between 28 and 509.",
+      "source": "https://arxiv.org/abs/2303.14714"
+    },
+    {
+      "claim": "Parts published a human-verifiable proof that the plane needs at least five colors (2020).",
+      "source": "https://arxiv.org/abs/2010.12661"
+    },
+    {
+      "claim": "No six-chromatic unit-distance graph is known, and any such graph needs at least 42 vertices.",
+      "source": "https://arxiv.org/abs/2303.14714 ; https://mathworld.wolfram.com/Hadwiger-NelsonProblem.html"
+    },
+    {
+      "claim": "Colorings whose color regions are ordinary polygons (natural map-type colorings) need at least seven colors.",
+      "source": "https://arxiv.org/abs/2502.01958"
+    },
+    {
+      "claim": "If every distance in a thin band around one is forbidden, at least seven colors are needed, and for a thin enough band seven suffice.",
+      "source": "https://arxiv.org/abs/2304.10163"
+    }
+  ]
+}

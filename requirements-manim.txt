@@ -1,0 +1,10 @@
+# Manim render environment (engine/.venv). Pinned to the versions the pilot (hadwiger-nelson) was built with.
+manim==0.21.0
+numpy==2.5.3
+scipy==1.18.1
+pillow==12.3.0
+av==18.1.0
+manimpango==0.6.1
+pycairo==1.29.1
+# topic numerics (the Riemann video used it for zeta values)
+mpmath==1.4.1

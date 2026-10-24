@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <defs>
+    <radialGradient id="bg" cx="0.5" cy="0.45" r="0.7">
+      <stop offset="0" stop-color="#FCF8F3"/><stop offset="1" stop-color="#EFEAF8"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="800" fill="url(#bg)"/>
+  <polygon points="518.0,400.0 459.0,502.2 341.0,502.2 282.0,400.0 341.0,297.8 459.0,297.8" fill="#3A3D5C"/><polygon points="704.0,507.4 645.0,609.6 527.0,609.6 468.0,507.4 527.0,405.2 645.0,405.2" fill="#F9E1A0"/><polygon points="518.0,614.8 459.0,717.0 341.0,717.0 282.0,614.8 341.0,512.6 459.0,512.6" fill="#B6E2BB"/><polygon points="332.0,507.4 273.0,609.6 155.0,609.6 96.0,507.4 155.0,405.2 273.0,405.2" fill="#F6B6D4"/><polygon points="332.0,292.6 273.0,394.8 155.0,394.8 96.0,292.6 155.0,190.4 273.0,190.4" fill="#A6E8DF"/><polygon points="518.0,185.2 459.0,287.4 341.0,287.4 282.0,185.2 341.0,83.0 459.0,83.0" fill="#D3C0F8"/><polygon points="704.0,292.6 645.0,394.8 527.0,394.8 468.0,292.6 527.0,190.4 645.0,190.4" fill="#F8CBA1"/>
+  <text x="400.0" y="450.0" text-anchor="middle" font-family="Avenir Next" font-weight="600"
+        font-size="150" fill="#FCF8F3">A</text>
+</svg>

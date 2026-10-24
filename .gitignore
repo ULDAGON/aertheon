@@ -1,0 +1,32 @@
+# Shared Python environments (rebuilt by setup.sh)
+.venv/
+tts/.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Rendered media: videos live in ../videos/<slug>/, never here
+media/
+*.mp4
+*.mov
+*.wav
+*.mp3
+*.flac
+*.srt
+*.vtt
+
+# Secrets and local settings
+.env
+.env.*
+.claude/settings.local.json
+*.pem
+*.key
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.log
